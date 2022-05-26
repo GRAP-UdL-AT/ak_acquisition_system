@@ -1,0 +1,66 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tjw50Px3pubbulHvKLgMKz$e8RWpIi6Oy/2WhvD9+ZbFUqrJD1HE0dfP46k9JSt0mU=",
+      "last_login": "2021-08-01 15:00:00.000000-01",
+      "is_superuser": "True",
+      "username": "admin",
+      "first_name": "Admin",
+      "last_name": "Admin",
+      "email": "admin@mydomainhere.com",
+      "is_staff": "True",
+      "is_active": "True",
+      "date_joined": "2021-08-01 15:00:00.000000-01"
+    }
+    },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$vyZ7Pi0cbMrjlTFIwm67HZ$0opsJ/JgD0YJ22IUicsshPkCGGeGfHGOuS6qdCF0hcA=",
+      "last_login": "2021-08-01 15:00:00.000000-01",
+      "is_superuser": "True",
+      "username": "user1",
+      "first_name": "User1",
+      "last_name": "User1",
+      "email": "user1@mydomainhere.com",
+      "is_staff": "False",
+      "is_active": "True",
+      "date_joined": "2021-08-01 15:00:00.000000-01"
+    }
+    },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tjw50Px3pubbulHvKLgMKz$e8RWpIi6Oy/2WhvD9+ZbFUqrJD1HE0dfP46k9JSt0mU=",
+      "last_login": "2021-08-01 15:00:00.000000-01",
+      "is_superuser": "True",
+      "username": "user2",
+      "first_name": "User2",
+      "last_name": "User2",
+      "email": "user2@mydomainhere.com",
+      "is_staff": "False",
+      "is_active": "True",
+      "date_joined": "2021-08-01 15:00:00.000000-01"
+    }
+    },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$tjw50Px3pubbulHvKLgMKz$e8RWpIi6Oy/2WhvD9+ZbFUqrJD1HE0dfP46k9JSt0mU=",
+      "last_login": "2021-08-01 15:00:00.000000-01",
+      "is_superuser": "True",
+      "username": "user3",
+      "first_name": "User3",
+      "last_name": "User3",
+      "email": "user3@mydomainhere.com",
+      "is_staff": "False",
+      "is_active": "True",
+      "date_joined": "2021-08-01 15:00:00.000000-01"
+    }
+    }
+]

@@ -62,11 +62,12 @@ stopping video recordings, as well as logging latitude and longitude coordinates
 
 | Folder                    | Description                                                                                                |
 |---------------------------|------------------------------------------------------------------------------------------------------------|
-| remote_client_generic/     | This is a template for future development, it is a dummy client can be used to test server connection.     |
-| remote_client_ak/          | Code to manage Azure Kinect DK camera                                                                      |
-| remote_client_zed/         | Code to manage ZED 2 camera and Ardusimple GNSS receiver                                                   |
-| remote_management_console/ | Desktop GUI based on Tkinter library. Offers the possibility of sending instructions to the remote devices.|
-| server_rest_api/           | The server acts as an intermediary in the management of messages between remote clients and the management <br> console, and stores information about of the instructions sent and received. It uses SQLite database. |
+| [docs/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/docs)     | Documentation and explanations.     |
+| [remote_client_generic/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_client_generic) | This is a template for future development, it is a dummy client can be used to test server connection.     |
+| [remote_client_ak/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_client_ak) | Code to manage Azure Kinect DK camera                                                                      |
+| [remote_client_zed/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_client_zed) | Code to manage ZED 2 camera and Ardusimple GNSS receiver                                                   |
+| [remote_management_console/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_management_console) | Desktop GUI based on Tkinter library. Offers the possibility of sending instructions to the remote devices.|
+| [server_rest_api/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api) | The server acts as an intermediary in the management of messages between remote clients and the management <br> console, and stores information about of the instructions sent and received. It uses SQLite database. |
 | .                         | . |
 
 ## Run AK_SM_RECORDER

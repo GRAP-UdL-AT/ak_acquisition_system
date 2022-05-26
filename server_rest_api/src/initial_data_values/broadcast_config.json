@@ -1,0 +1,10 @@
+[
+  {
+    "model": "clients.broadcastconfig",
+    "pk": 1,
+    "fields": {
+      "sleep_time": "5",
+      "created": "2021-08-04T11:48:11.149Z"
+    }
+  }
+]

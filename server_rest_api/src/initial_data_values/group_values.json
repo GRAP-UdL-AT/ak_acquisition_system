@@ -1,0 +1,26 @@
+[
+  {
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+      "id": 1,	
+      "name": "UI_MANAGEMENT"
+    }
+    },
+  {
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+      "id": 2,	
+      "name": "REMOTE_CLIENTS"
+    }
+    },
+  {
+    "model": "auth.group",
+    "pk": 3,
+    "fields": {
+      "id": 3,	
+      "name": "OTHER"
+    }
+    }
+]

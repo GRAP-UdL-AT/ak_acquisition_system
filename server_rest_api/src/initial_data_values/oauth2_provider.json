@@ -1,0 +1,17 @@
+[
+    {
+        "model": "oauth2_provider.application",
+        "pk": 1,
+        "fields": {
+            "client_id": "super_secret_key_id.0#",
+            "user": null,
+            "redirect_uris": "",
+            "client_type": "confidential",
+            "authorization_grant_type": "password",
+            "client_secret": "super_secret_client_1234567891011121314151617181920.*#super_secret_client_1234567891011121314151617181920.*#",
+            "name": "",
+            "skip_authorization": false,
+            "created": "2021-08-01T15:00:00.000Z",
+            "updated": "2021-08-01T15:00:00.000Z"}
+    }
+]
