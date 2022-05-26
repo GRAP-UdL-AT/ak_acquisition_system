@@ -1,40 +1,208 @@
-# README
-[AK_AQCS Software](https://github.com/GRAP-UdL-AT/ak_acquisition_system).
+[AK_AQCS Software](https://github.com/GRAP-UdL-AT/ak_acquisition_system)
 
+# AK_ACQS Azure Kinect Acquisition System
 
+AK_ACQS is a software solution for data acquisition in fruit orchards using a sensor system boarded on a terrestrial
+vehicle. It allows the coordination of computers and sensors through the sending of remote commands via a GUI. At the
+same time, it adds an abstraction layer on library stack of each sensor, facilitating its integration. This software
+solution is supported by a local area network (LAN), which connects computers and sensors from different manufacturers (
+cameras of different technologies, GNSS receiver) for in-field fruit yield testing.
+
+![AK_AQCS_PRESENTATION](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/ak_acqs_presentation.png?raw=true)
+
+## Contents (TODO)
+
+* Pre-requisites
+* Functionalities
+* Run
+* Files and folder description
+* Development tools and environment
+
+## Pre-requisites
+
+### Hardware used
+
+* MSI Modern 15 A10RBS-484XES (New Taipei, Zhonghe Dist) Computer 1
+* Jetson Xavier NX (NVIDIA, Santa Clara, America) Computer 2.
+* LAN (Local Area Network) to connect computers.
+* Azure Kinect DK camera connected to the computer. Specifications can be seen in
+  the [manufacturer site](https://docs.microsoft.com/es-es/azure/kinect-dk/hardware-specification).
+* GNSS
+  receiver [Ardusimple SimpleRTK2B – Basic Starter Kit](https://www.ardusimple.com/product/simplertk2b-basic-starter-kit-ip65/)
+  .
+* [Stereolab ZED 2 camera](https://www.stereolabs.com/zed-2/) connected to the computer.
+
+![SETUP_EXAMPLE](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/ak_acqs_setup_example.png?raw=true)
+
+### Software to manage devices* [SDK Azure Kinect](https://docs.microsoft.com/es-es/azure/kinect-dk/set-up-azure-kinect-dk) installed.
+* Canonical Ubuntu 20.04.
+* Jetson Pack.
+* [SDK Azure Kinect](https://docs.microsoft.com/es-es/azure/kinect-dk/set-up-azure-kinect-dk) installed.
+* [Stereolabs SDK](https://www.stereolabs.com/developers/release/) installed.
+* [pyk4a library](https://pypi.org/project/pyk4a/) installed. If the operating system is Windows, follow
+  this [steps](https://github.com/etiennedub/pyk4a/). You can find test basic examples with
+  pyk4a [here](https://github.com/etiennedub/pyk4a/tree/master/example).
+
+## Functionalities
+
+The functionalities of AK_ACQS consist of remotely enabling and disabling clients, taking snapshots, starting and
+stopping video recordings, as well as logging latitude and longitude coordinates during the video recording time.
+
+* **[ENABLE REMOTE CLIENTS] allows the user to send an attention call to the devices to configure them in the initial
+  state of listening to orders.
+* **[TAKE CAPTURES] makes it easy for the user to capture short videos, automatically starting and stopping video or
+  snapshot recording.
+* **[START RECORDING/ STOP RECORDING] is the functionality that allows to send start and stop recording messages to all
+  connected clients. Remote clients managing a GNSS receiver will start/stop operations for coordinate capture.
+* **[DISABLE REMOTE CLIENTS], with this function the user remotely turns off the devices. These will stop operating when
+  receiving and processing the message. The recorded files are stored on the host computers, just like the data
+  collected by the GNSS receiver.
+
+## Files and folder description
+
+| Folder                    | Description                                                                                                |
+|---------------------------|------------------------------------------------------------------------------------------------------------|
+| remote_client_generic/     | This is a template for future development, it is a dummy client can be used to test server connection.     |
+| remote_client_ak/          | Code to manage Azure Kinect DK camera                                                                      |
+| remote_client_zed/         | Code to manage ZED 2 camera and Ardusimple GNSS receiver                                                   |
+| remote_management_console/ | Desktop GUI based on Tkinter library. Offers the possibility of sending instructions to the remote devices.|
+| server_rest_api/           | The server acts as an intermediary in the management of messages between remote clients and the management <br> console, and stores information about of the instructions sent and received. It uses SQLite database. |
+| .                         | . |
+
+## Run AK_SM_RECORDER
+
+## Install
+
+```
+python ak_sm_recorder_main.py
+```
+
+### Windows (TODO)
+
+Copy folder FOLDER_HERE and execute "FILENAME_EXE.EXE".
+
+### Linux (TODO)
+
+..
+
+## Package distribution format
+
+Explain about packages distribution.
+
+| Package type | Package |  Url |  Description | 
+|--------------|---------|------|------| 
+| Windows      | .EXE    | .EXE | Executables are stored under build/ | 
+| Linux        | .deb    | .deb | NOT IMPLEMENTED YET| 
+| PIP          | .whl    | .whl | PIP packages are stored in build/ | 
+| Virtual environment          | N/A    | N/A | . |
+| . | . | . |
+
+## Files and folder description
+
+Folder description:
+
+| Folders                    | Description            |
+|---------------------------|-------------------------|
+| docs/ | Documentation |
+| src/ | Source code |
+| win_exe_conf/ | Specifications for building .exe files with Pyinstaller.|
+| . | . |
+
+Files description:
+
+| Files                    | Description              | OS |
+|---------------------------|-------------------------|---|
+| activate.bat | Activate environments in Windows | WIN |
+| clean_files.bat | Clean files under CMD. | WIN |
+| ak_sm_recorder_main.bat | Executing main script | WIN |
+| build_pip.bat | Build PIP package to distribution | WIN |
+| build_win.bat | Build .EXE for distribution | WIN |
+| /src/ak_sm_recorder/__main__.py | Main function used in package compilation | Supported by Python |
+| /ak_sm_recorder_main.py | Python main function | Supported by Python |
+| setup.cfg | Package configuration PIP| Supported by Python |
+| pyproject.toml | Package description pip| Supported by Python |
+| . | . | . |
+
+## Development tools and environment
+
+* [Pyinstaller](https://pyinstaller.org).
+* [Opencv](https://opencv.org/).
+* [Curses for Python](https://docs.python.org/3/howto/curses.html) ```pip install windows-curses```.
+
+### Notes for developers
+
+You can use the __main__.py for execute as first time in src/ak_frame_extractor/_ _ main _ _.py Configure the path of
+the project, if you use Pycharm, put your folder root like this:
+![ak_sm_recorder](https://github.com/GRAP-UdL-AT/ak_sm_recorder/blob/main/img/configuration_pycharm.png?raw=true)
+
+### Creating virtual environment Linux (TODO)
+
+```
+python3 -m venv ./venv
+source ./venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements_linux.txt
+```
+
+### Creating virtual environment  Windows (TODO)
+
+```
+%userprofile%"\AppData\Local\Programs\Python\Python38\python.exe" -m venv ./venv
+venv\Scripts\activate.bat
+pip install --upgrade pip
+pip install -r requirements_win.txt
+```
+
+** If there are some problems in Windows, follow [this](https://github.com/etiennedub/pyk4a/) **
+
+```
+pip install pyk4a --no-use-pep517 --global-option=build_ext --global-option="-IC:\Program Files\Azure Kinect SDK v1.4.1\sdk\include" --global-option="-LC:\Program Files\Azure Kinect SDK v1.4.1\sdk\windows-desktop\amd64\release\lib"
+```
+
+### Running software
+
+TODO_ADD_HERE_TEXT
+
+## Authorship
+
+This project is contributed by [GRAP-UdL-AT](http://www.grap.udl.cat/en/index.html). Please contact authors to report
+bugs juancarlos.miranda@udl.cat
+
+## Citation
+
+If you find this code useful, please consider citing:
+[GRAP-UdL-AT/ak_sm_recorder](https://github.com/GRAP-UdL-AT/ak_sm_recorder/).
 
 ## Contents
 
-| Folder                    | Description                                                                                                                                                                                                     |
-|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| remote_client_ak          | Code to manage Azure Kinect DK camera                                                                                                                                                                           |
-| remote_client_generic     | This is a template for future development                                                                                                                                                                       |
-| remote_client_zed         | Code to manage ZED 2 camera and Ardusimple GNSS receiver                                                                                                                                                        |
-| remote_management_console | Desktop GUI based on Tkinter library. Offers the possibility of sending instructions to the remote devices.                                                                                                     |
-| server_rest_api           | The server acts as an intermediary in the management of messages between remote clients and the managemen console, and stores information about of the instructions sent and received. It uses SQLite database. |
-| .                         | .                                                                                                                                                                                                               |
-
-
-
 ## Basic requirements (TODO)
-The requirements of software can be viewed in **requirements_linux.txt** and **requirements_win.txt**.
-The software has been tested on Ubuntu Linux 20.04 and Windows 10.
+
+The requirements of software can be viewed in **requirements_linux.txt** and **requirements_win.txt**. The software has
+been tested on Ubuntu Linux 20.04 and Windows 10.
 
 ## Authorship
-This project is contributed by [GRAP-UdL-AT](http://www.grap.udl.cat/en/index.html).
-Please contact authors to report bugs juancarlos.miranda@udl.cat
+
+This project is contributed by [GRAP-UdL-AT](http://www.grap.udl.cat/en/index.html). Please contact authors to report
+bugs juancarlos.miranda@udl.cat
 
 ## Citation
+
 If you find this code useful, please consider citing:
 [Juan Carlos Miranda](https://github.com/juancarlosmiranda).
 
-
 ## Acknowledgements
 
-Acknowledgements
-This work was partly funded by the Secretariat of Universities and Research of the Department of Business and Knowledge of the Generalitat de Catalunya (grant 2017 SGR 646) and the Spanish Ministry of Science, Innovation and Universities (PAgFRUIT project RTI2018-094222-B-I00). The first and aforementioned official institution and the Fons Social Europeu (FSE) are also thanked for financing Juan Carlos Miranda’s pre-doctoral fellowship (2020 FI_B 00586). The authors would also like to thank XXXXXX and XXXXXX for their support in XXXXXX.
+Acknowledgements This work was partly funded by the Secretariat of Universities and Research of the Department of
+Business and Knowledge of the Generalitat de Catalunya (grant 2017 SGR 646) and the Spanish Ministry of Science,
+Innovation and Universities (PAgFRUIT project RTI2018-094222-B-I00). The first and aforementioned official institution
+and the Fons Social Europeu (FSE) are also thanked for financing Juan Carlos Miranda’s pre-doctoral fellowship (2020
+FI_B 00586). The authors would also like to thank XXXXXX and XXXXXX for their support in XXXXXX.
 
-<img src="https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main//docs/img/logo_udl.png" height="60px" alt="Universitat de Lleida"/>&nbsp;&nbsp;&nbsp;<img src="https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main//docs/img/logo_goverment_calonia.png" height="60px" alt="Generalitat de Catalunya"/>&nbsp;&nbsp;&nbsp;<img src="https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/logo_min_science.png" height="60px" alt="Ministerio de Ciencia, Innovación y Universidades"/>&nbsp;&nbsp;&nbsp;<img src="https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/logo_UNIO_EUROPEA.png" height="60px" alt="Fons Social Europeu (FSE) "/>&nbsp;&nbsp;&nbsp;<img src="https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/logo_AGAUR.png" height="60px" alt="AGAUR"/>
+<img src="https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main//docs/img/logo_udl.png" height="60px" alt="Universitat de Lleida"/>
+&nbsp;&nbsp;&nbsp;<img src="https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main//docs/img/logo_goverment_calonia.png" height="60px" alt="Generalitat de Catalunya"/>
+&nbsp;&nbsp;&nbsp;<img src="https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/logo_min_science.png" height="60px" alt="Ministerio de Ciencia, Innovación y Universidades"/>
+&nbsp;&nbsp;&nbsp;<img src="https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/logo_UNIO_EUROPEA.png" height="60px" alt="Fons Social Europeu (FSE) "/>
+&nbsp;&nbsp;&nbsp;<img src="https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/logo_AGAUR.png" height="60px" alt="AGAUR"/>
 
 
 
