@@ -29,6 +29,13 @@ If you find this code useful, please consider citing:
 [Juan Carlos Miranda](https://github.com/juancarlosmiranda).
 
 
+## Acknowledgements
+
+This project has been partially supported by the research project InDAGuS, Infrastructures for Sustainable Open Government Data with Geospatial Features (Spanish Government TIN2012-37826-C02), together with the Universitat de Lleida and the Massachusetts Institute of Technology.
+
+<img src="http://www.eps.udl.cat/export/sites/Eps/UdL-EPS.jpg" height="60px" alt="Universitat de Lleida"/>
+&nbsp;&nbsp;&nbsp;
+<img src="http://www.eps.udl.cat/export/sites/Eps/UdL-EPS.jpg" height="60px" alt="Universitat de Lleida"/>
 
 
 
