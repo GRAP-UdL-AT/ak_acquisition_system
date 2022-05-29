@@ -72,7 +72,7 @@ stopping video recordings, as well as logging latitude and longitude coordinates
 | [server_rest_api/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api) | The server acts as an intermediary in the management of messages between remote clients and the management <br> console, and stores information about of the instructions sent and received. It uses SQLite database. |
 | .                         | . |
 
-## Suplementary materials
+## Supplementary materials
 
 | Folder                    | Description                                                                                                |
 |---------------------------|------------------------------------------------------------------------------------------------------------|
