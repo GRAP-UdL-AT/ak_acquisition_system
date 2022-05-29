@@ -34,8 +34,9 @@ cameras of different technologies, GNSS receiver) for in-field fruit yield testi
 
 ![SETUP_EXAMPLE](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/ak_acqs_example_of_use.png?raw=true)
 
-### Software to manage devices* [SDK Azure Kinect](https://docs.microsoft.com/es-es/azure/kinect-dk/set-up-azure-kinect-dk) installed.
+### Software to manage devices 
 
+* [SDK Azure Kinect](https://docs.microsoft.com/es-es/azure/kinect-dk/set-up-azure-kinect-dk) installed.
 * [Canonical Ubuntu](https://ubuntu.com/#download) 20.04.
 * [Jetson Pack](https://developer.nvidia.com/embedded/jetpack).
 * [SDK Azure Kinect](https://docs.microsoft.com/es-es/azure/kinect-dk/set-up-azure-kinect-dk) installed.
