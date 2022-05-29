@@ -25,11 +25,8 @@ cameras of different technologies, GNSS receiver) for in-field fruit yield testi
 * MSI Modern 15 A10RBS-484XES (New Taipei, Zhonghe Dist) Computer 1
 * Jetson Xavier NX (NVIDIA, Santa Clara, America) Computer 2.
 * LAN (Local Area Network) to connect computers.
-* Azure Kinect DK camera connected to the computer. Specifications can be seen in
-  the [manufacturer site](https://docs.microsoft.com/es-es/azure/kinect-dk/hardware-specification).
-* GNSS
-  receiver [Ardusimple SimpleRTK2B – Basic Starter Kit](https://www.ardusimple.com/product/simplertk2b-basic-starter-kit-ip65/)
-  .
+* [Azure Kinect DK camera](https://docs.microsoft.com/es-es/azure/kinect-dk/hardware-specification) connected to the computer.
+* GNSS receiver [Ardusimple SimpleRTK2B – Basic Starter Kit](https://www.ardusimple.com/product/simplertk2b-basic-starter-kit-ip65/).
 * [Stereolab ZED 2 camera](https://www.stereolabs.com/zed-2/) connected to the computer.
 
 ![SETUP_EXAMPLE](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/ak_acqs_setup_example.png?raw=true)
@@ -42,6 +39,8 @@ cameras of different technologies, GNSS receiver) for in-field fruit yield testi
 * [pyk4a library](https://pypi.org/project/pyk4a/) installed. If the operating system is Windows, follow
   this [steps](https://github.com/etiennedub/pyk4a/). You can find test basic examples with
   pyk4a [here](https://github.com/etiennedub/pyk4a/tree/master/example).
+
+
 
 ## Functionalities
 
@@ -69,6 +68,13 @@ stopping video recordings, as well as logging latitude and longitude coordinates
 | [remote_management_console/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_management_console) | Desktop GUI based on Tkinter library. Offers the possibility of sending instructions to the remote devices.|
 | [server_rest_api/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api) | The server acts as an intermediary in the management of messages between remote clients and the management <br> console, and stores information about of the instructions sent and received. It uses SQLite database. |
 | .                         | . |
+
+
+## Suplementary materials
+| Folder                    | Description                                                                                                |
+|---------------------------|------------------------------------------------------------------------------------------------------------|
+| [REST API test/]https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/docs| Explanations about testing REST API.     |
+
 
 ## Run AK_SM_RECORDER
 
@@ -125,7 +131,7 @@ Files description:
 | . | . | . |
 
 ## Development tools and environment
-
+* [curl](https://curl.se/)
 * [Pyinstaller](https://pyinstaller.org).
 * [Opencv](https://opencv.org/).
 * [Curses for Python](https://docs.python.org/3/howto/curses.html) ```pip install windows-curses```.
@@ -172,7 +178,7 @@ bugs juancarlos.miranda@udl.cat
 ## Citation
 
 If you find this code useful, please consider citing:
-[GRAP-UdL-AT/ak_sm_recorder](https://github.com/GRAP-UdL-AT/ak_sm_recorder/).
+[GRAP-UdL-AT/ak_acquisition_system](https://github.com/GRAP-UdL-AT/ak_acquisition_system/).
 
 ## Contents
 
