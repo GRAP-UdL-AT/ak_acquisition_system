@@ -32,7 +32,7 @@ cameras of different technologies, GNSS receiver) for in-field fruit yield testi
   .
 * [Stereolab ZED 2 camera](https://www.stereolabs.com/zed-2/) connected to the computer.
 
-![SETUP_EXAMPLE](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/ak_acqs_example_of_use?raw=true)
+![SETUP_EXAMPLE](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/ak_acqs_example_of_use.png?raw=true)
 
 ### Software to manage devices* [SDK Azure Kinect](https://docs.microsoft.com/es-es/azure/kinect-dk/set-up-azure-kinect-dk) installed.
 
