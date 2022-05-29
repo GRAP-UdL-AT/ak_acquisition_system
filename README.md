@@ -36,8 +36,8 @@ cameras of different technologies, GNSS receiver) for in-field fruit yield testi
 
 ### Software to manage devices* [SDK Azure Kinect](https://docs.microsoft.com/es-es/azure/kinect-dk/set-up-azure-kinect-dk) installed.
 
-* Canonical Ubuntu 20.04.
-* Jetson Pack.
+* [Canonical Ubuntu](https://ubuntu.com/#download) 20.04.
+* [Jetson Pack](https://developer.nvidia.com/embedded/jetpack).
 * [SDK Azure Kinect](https://docs.microsoft.com/es-es/azure/kinect-dk/set-up-azure-kinect-dk) installed.
 * [Stereolabs SDK](https://www.stereolabs.com/developers/release/) installed.
 * [pyk4a library](https://pypi.org/project/pyk4a/) installed. If the operating system is Windows, follow

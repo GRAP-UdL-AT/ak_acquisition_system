@@ -1,4 +1,4 @@
-# README REST API server
+# REST API testing
 
 ## REST API call reference with curl
 If you want to test the server use curl as following:
@@ -15,7 +15,7 @@ curl -d "username=user1&password=strong_pass1" http://localhost:9000/authenticat
 curl -d "token=A_TOKEN_HERE" http://localhost:9000/authentication/logout/
 ```
 
-### Get /commands/
+### /commands/
 ```
 curl -H "Authorization: Bearer A_TOKEN_HERE" http://localhost:9000/v1/commands/
 curl -H "Authorization: Bearer A_TOKEN_HERE" -d "command=START_RECORD" http://localhost:9000/v1/commands/
@@ -24,19 +24,19 @@ curl -H "Authorization: Bearer A_TOKEN_HERE" -d "command=WAITING" http://localho
 curl -H "Authorization: Bearer A_TOKEN_HERE" -d "command=STOP_REMOTE_CLIENT" http://localhost:9000/v1/commands/
 ```
 
-### Get /config/
+### /config/
 ```
 curl -H "Authorization: Bearer A_TOKEN_HERE" http://localhost:9000/v1/config/
 curl -H "Authorization: Bearer A_TOKEN_HERE" -d "sleep_time=5" http://localhost:9000/v1/config/
 ```
 
-### Get /executed/
+### /executed/
 ```
 curl -H "Authorization: Bearer A_TOKEN_HERE" -d "command=RECORDING_ACK&start_record=''" http://localhost:9000/v1/commands/
 curl -H "Authorization: Bearer A_TOKEN_HERE" http://localhost:9000/v1/command/1/
 ```
 
-### Get /remote/
+### /remote/
 ```
 curl -H "Authorization: Bearer A_TOKEN_HERE" http://localhost:9000/v1/remote/
 curl -H "Authorization: Bearer A_TOKEN_HERE" -d "uuid=IIUUII&hostname=UNOHOST&os='WINDOWS'&ip='192.168.0.1'" http://localhost:9000/v1/remote/
