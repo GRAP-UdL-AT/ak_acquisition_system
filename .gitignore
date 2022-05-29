@@ -1,3 +1,9 @@
 
 *.pyc
 server_rest_api/src/clients/migrations/0001_initial.py
+server_rest_api/.idea/inspectionProfiles/profiles_settings.xml
+server_rest_api/.idea/inspectionProfiles/Project_Default.xml
+server_rest_api/.idea/misc.xml
+server_rest_api/.idea/modules.xml
+server_rest_api/.idea/server_rest_api.iml
+server_rest_api/.idea/vcs.xml
