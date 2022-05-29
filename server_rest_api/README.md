@@ -6,8 +6,6 @@ connected. In this work remote clients have been used to control Azure Kinect, Z
 make it as simple as possible, the data was stored in the db.sqlite3 file.
 
 ![REST_API_SERVER_PRESENTATION](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/server_rest_api/docs/img/rest_api_server_presentation.png?raw=true)
-![REST_API_SERVER_PRESENTATION](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/server_rest_api/docs/img/rest_api_server_presentation.png)
-![AK_AQCS_PRESENTATION](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/ak_acqs_presentation.png?raw=true)
 
 ## Files and folder description
 
