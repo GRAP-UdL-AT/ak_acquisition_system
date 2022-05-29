@@ -44,7 +44,7 @@ USE_L10N = True
 USE_TZ = True
 
 # configure here IP
-ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', '192.168.1.203', 'localhost']
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', '192.168.43.110', 'localhost']
 CORS_ORIGIN_ALLOW_ALL = True
 
 INSTALLED_APPS = [
