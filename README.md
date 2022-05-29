@@ -25,13 +25,17 @@ cameras of different technologies, GNSS receiver) for in-field fruit yield testi
 * MSI Modern 15 A10RBS-484XES (New Taipei, Zhonghe Dist) Computer 1
 * Jetson Xavier NX (NVIDIA, Santa Clara, America) Computer 2.
 * LAN (Local Area Network) to connect computers.
-* [Azure Kinect DK camera](https://docs.microsoft.com/es-es/azure/kinect-dk/hardware-specification) connected to the computer.
-* GNSS receiver [Ardusimple SimpleRTK2B – Basic Starter Kit](https://www.ardusimple.com/product/simplertk2b-basic-starter-kit-ip65/).
+* [Azure Kinect DK camera](https://docs.microsoft.com/es-es/azure/kinect-dk/hardware-specification) connected to the
+  computer.
+* GNSS
+  receiver [Ardusimple SimpleRTK2B – Basic Starter Kit](https://www.ardusimple.com/product/simplertk2b-basic-starter-kit-ip65/)
+  .
 * [Stereolab ZED 2 camera](https://www.stereolabs.com/zed-2/) connected to the computer.
 
-![SETUP_EXAMPLE](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/ak_acqs_setup_example.png?raw=true)
+![SETUP_EXAMPLE](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/ak_acqs_example_of_use?raw=true)
 
 ### Software to manage devices* [SDK Azure Kinect](https://docs.microsoft.com/es-es/azure/kinect-dk/set-up-azure-kinect-dk) installed.
+
 * Canonical Ubuntu 20.04.
 * Jetson Pack.
 * [SDK Azure Kinect](https://docs.microsoft.com/es-es/azure/kinect-dk/set-up-azure-kinect-dk) installed.
@@ -39,8 +43,6 @@ cameras of different technologies, GNSS receiver) for in-field fruit yield testi
 * [pyk4a library](https://pypi.org/project/pyk4a/) installed. If the operating system is Windows, follow
   this [steps](https://github.com/etiennedub/pyk4a/). You can find test basic examples with
   pyk4a [here](https://github.com/etiennedub/pyk4a/tree/master/example).
-
-
 
 ## Functionalities
 
@@ -69,12 +71,11 @@ stopping video recordings, as well as logging latitude and longitude coordinates
 | [server_rest_api/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api) | The server acts as an intermediary in the management of messages between remote clients and the management <br> console, and stores information about of the instructions sent and received. It uses SQLite database. |
 | .                         | . |
 
-
 ## Suplementary materials
+
 | Folder                    | Description                                                                                                |
 |---------------------------|------------------------------------------------------------------------------------------------------------|
 | [REST API test/]https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/docs| Explanations about testing REST API.     |
-
 
 ## Run AK_SM_RECORDER
 
@@ -131,6 +132,7 @@ Files description:
 | . | . | . |
 
 ## Development tools and environment
+
 * [curl](https://curl.se/)
 * [Pyinstaller](https://pyinstaller.org).
 * [Opencv](https://opencv.org/).
@@ -199,11 +201,17 @@ If you find this code useful, please consider citing:
 
 ## Acknowledgements
 
-Acknowledgements This work was partly funded by the Secretariat of Universities and Research of the Department of
-Business and Knowledge of the Generalitat de Catalunya (grant 2017 SGR 646) and the Spanish Ministry of Science,
-Innovation and Universities (PAgFRUIT project RTI2018-094222-B-I00). The first and aforementioned official institution
-and the Fons Social Europeu (FSE) are also thanked for financing Juan Carlos Miranda’s pre-doctoral fellowship (2020
-FI_B 00586). The authors would also like to thank XXXXXX and XXXXXX for their support in XXXXXX.
+This work was funded by
+the [Spanish Ministry of Science and Innovation and the Spanish Estate Research Agency](https://www.ciencia.gob.es) for
+the grant RTI2018-094222-B-I00 ([PAgFRUIT project](http://www.pagfruit.udl.cat/en/)). Secretariat of Universities and
+Research of the Department of Business and Knowledge of the [Generalitat de Catalunya](https://web.gencat.cat/) (grant
+2017 SGR 646), and Fons Social Europeu ([FSE](https://ec.europa.eu/)) are also thanked for financing Juan Carlos
+Miranda’s pre-doctoral fellowship ([2020 FI_B 00586](https://agaur.gencat.cat/)). The authors would also like to thank
+the Institut de Recerca i Tecnologia Agroalimentàries ([IRTA](https://www.irta.cat)) for allowing the use of their
+experimental fields, in particular Dr. Luís Asín and Dr. Jaume Lordán who have contributed to the success of this work.
+
+
+
 
 <img src="https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main//docs/img/logo_udl.png" height="60px" alt="Universitat de Lleida"/>
 &nbsp;&nbsp;&nbsp;<img src="https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main//docs/img/logo_goverment_calonia.png" height="60px" alt="Generalitat de Catalunya"/>
