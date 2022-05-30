@@ -85,10 +85,21 @@ Explain about packages distribution.
 
 | Package type | Package |  Url |  Description | 
 |--------------|---------|------|------| 
-| Windows      | .EXE    | .EXE | Executables are stored under build/ | 
-| Linux        | .deb    | .deb | NOT IMPLEMENTED YET| 
-| PIP          | .whl    | .whl | PIP packages are stored in build/ | 
-| Virtual environment          | N/A    | N/A | . |
+| Virtual environment          | N/A    | N/A | All components of this software run in separate virtual environments.. |
+
+
+| Folder                    | Description                                                                                                | Linux | Windows | Jetpack|
+|---------------------------|------------------------------------------------------------------------------------------------------------|---|---|---|
+| [remote_client_generic/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_client_generic) | This is a template for future development, it is a dummy client can be used to test server connection. | YES |  YES | YES |
+| [remote_client_ak/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_client_ak) | Code to manage Azure Kinect DK camera                                                                      | YES |  YES | N/T |
+| [remote_client_zed/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_client_zed) | Code to manage ZED 2 camera and Ardusimple GNSS receiver                                                   | YES |  N/T | YES |
+| [remote_management_console/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_management_console) | Desktop GUI based on Tkinter library. Offers the possibility of sending instructions to the remote devices.| YES |  YES | N/T |
+| [server_rest_api/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api) | The server acts as an intermediary in the management of messages between remote clients and the management <br> console, and stores information about of the instructions sent and received. It uses SQLite database. | YES |  N/T | YES |
+
+**References:**
+* N/T --> Not Tested.
+* YES --> Tested in operating system.
+* NO --> The software has not been tested under the operating system at the time of publication.
 
 
 ## Authorship
