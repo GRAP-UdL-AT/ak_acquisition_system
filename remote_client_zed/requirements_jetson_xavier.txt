@@ -1,0 +1,12 @@
+certifi==2021.5.30
+charset-normalizer==2.0.4
+Cython==0.29.24
+idna==3.2
+numpy==1.19.4
+opencv-python==4.5.3.56
+pkg_resources==0.0.0
+PyOpenGL==3.1.5
+pyserial==3.5
+pyzed @ file:///usr/local/zed/pyzed-3.5-cp36-cp36m-linux_aarch64.whl
+requests==2.26.0
+urllib3==1.26.6
