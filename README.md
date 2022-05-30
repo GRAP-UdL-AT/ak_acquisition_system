@@ -1,5 +1,3 @@
-[AK_AQCS Software](https://github.com/GRAP-UdL-AT/ak_acquisition_system)
-
 # AK_ACQS Azure Kinect Acquisition System
 
 AK_ACQS is a software solution for data acquisition in fruit orchards using a sensor system boarded on a terrestrial
@@ -12,15 +10,18 @@ cameras of different technologies, GNSS receiver) for in-field fruit yield testi
 
 ## Contents (TODO)
 
-* Pre-requisites.
-* Functionalities.
-* Run.
-* Files and folder description.
-* Development tools and environment.
+* 1. Pre-requisites.
+* 2. Functionalities developed.
+* 3. Files and folder description.
+* 4. Development tools and environment.
 
-## Pre-requisites
+## 1. Pre-requisites
+The following figure shows an example configuration, which will be used in other sections as a starting point for the explanations.
 
-### Hardware used
+![SETUP_EXAMPLE](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/ak_acqs_example_of_use.png?raw=true)
+
+
+### 1.1 Hardware
 
 * MSI Modern 15 A10RBS-484XES (New Taipei, Zhonghe Dist) Computer 1
 * Jetson Xavier NX (NVIDIA, Santa Clara, America) Computer 2.
@@ -30,11 +31,8 @@ cameras of different technologies, GNSS receiver) for in-field fruit yield testi
 * GNSS receiver [Ardusimple SimpleRTK2B – Basic Starter Kit](https://www.ardusimple.com/product/simplertk2b-basic-starter-kit-ip65/).
 * [Stereolab ZED 2 camera](https://www.stereolabs.com/zed-2/) connected to the computer.
 
-![SETUP_EXAMPLE](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/ak_acqs_example_of_use.png?raw=true)
+### 1.2 Software 
 
-### Software to manage devices 
-
-* [SDK Azure Kinect](https://docs.microsoft.com/es-es/azure/kinect-dk/set-up-azure-kinect-dk) installed.
 * [Canonical Ubuntu](https://ubuntu.com/#download) 20.04.
 * [Jetson Pack](https://developer.nvidia.com/embedded/jetpack).
 * [SDK Azure Kinect](https://docs.microsoft.com/es-es/azure/kinect-dk/set-up-azure-kinect-dk) installed.
@@ -43,7 +41,7 @@ cameras of different technologies, GNSS receiver) for in-field fruit yield testi
   this [steps](https://github.com/etiennedub/pyk4a/). You can find test basic examples with
   pyk4a [here](https://github.com/etiennedub/pyk4a/tree/master/example).
 
-## Functionalities
+## 2. Functionalities developed
 
 The functionalities of AK_ACQS consist of remotely enabling and disabling clients, taking snapshots, starting and
 stopping video recordings, as well as logging latitude and longitude coordinates during the video recording time.
@@ -58,7 +56,7 @@ stopping video recordings, as well as logging latitude and longitude coordinates
   receiving and processing the message. The recorded files are stored on the host computers, just like the data
   collected by the GNSS receiver.
 
-## Files and folder description
+## 3. Files and folder description
 
 | Folder                    | Description                                                                                                |
 |---------------------------|------------------------------------------------------------------------------------------------------------|
@@ -70,22 +68,25 @@ stopping video recordings, as well as logging latitude and longitude coordinates
 | [server_rest_api/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api) | The server acts as an intermediary in the management of messages between remote clients and the management <br> console, and stores information about of the instructions sent and received. It uses SQLite database. |
 
 
-## Supplementary materials
+## 4. Development tools
+### 4.1 Supplementary materials
+Documents and explanations accompanying AK_ACQS.
 
 | Folder                    | Description                                                                                                |
 |---------------------------|------------------------------------------------------------------------------------------------------------|
 | [REST API test/]https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/docs| Explanations about testing REST API.     |
 
 
-## Package distribution format
+### 4.2 Package distribution format
 
-Explain about packages distribution.
+Distribution of AK_ACQS components.
 
 | Package type | Package |  Url |  Description | 
 |--------------|---------|------|------| 
 | Virtual environment          | N/A    | N/A | All components of this software run in separate virtual environments. |
 
 
+## 4.3 Supported operating systems
 
 The following table shows each component of AK_ACQS and the operating systems on which they have been tested.
 
@@ -110,7 +111,14 @@ bugs juancarlos.miranda@udl.cat
 ## Citation
 
 If you find this code useful, please consider citing:
-[Juan Carlos Miranda](https://github.com/juancarlosmiranda).
+```
+@article{SURNAME_YEAR,
+    Author = {Miranda, Juan Carlos and Gen{\'e}-Mola, Jordi and Arn{\'o}, Jaume and Gregorio, Eduard},
+    Title = {AKFruitData: a dual software application for Azure Kinect cameras to acquire and extract informative data in yield tests performed in fruit orchard environments},
+    Journal = {Submitted},
+    Year = {YEAR}
+}
+```
 
 
 ## Acknowledgements
