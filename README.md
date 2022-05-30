@@ -10,10 +10,10 @@ cameras of different technologies, GNSS receiver) for in-field fruit yield testi
 
 ## Contents (TODO)
 
-* 1. Pre-requisites.
-* 2. Functionalities developed.
-* 3. Files and folder description.
-* 4. Development tools and environment.
+1. Pre-requisites.
+2. Functionalities developed.
+3. Files and folder description.
+4. Development tools and environment.
 
 ## 1. Pre-requisites
 The following figure shows an example configuration, which will be used in other sections as a starting point for the explanations.
