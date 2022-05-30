@@ -1,4 +1,4 @@
-# AK_ACQS - Remote client Azure
+# AK_ACQS - Remote client ZED
 
 The solution allows recording data from cameras housed in different computers, focusing on the same scene. The cameras are of different brands, models and technologies. Images are recorded with GPS coordinates.
 It is a solution made up of three components: API server, remote clients connected to cameras, and user interface.
@@ -7,7 +7,7 @@ API server: receive requests, send group messages.
 Remote client: receives instructions from a central server, hosts devices (cameras, GPS). Make recordings and store data from them.
 User interface: allows managing the operation of the assembly and issuing remote commands.
 
-![REMOTE_CLIENT_AK](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/remote_client_zed/docs/img/remote_client_azure_presentation.png?raw=true)
+![REMOTE_CLIENT_ZED](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/remote_client_zed/docs/img/remote_client_zed_presentation.png?raw=true)
 
 ## Files and folder description
 
@@ -120,7 +120,7 @@ $ curl -d "username=USER_ACCOUNT_HERE&password=USER_PASSWORD_HERE" http://localh
 
 ## 4. Check Azure Kinect settings ./conf/kinect_azure_settings.conf
 You must be sure that Azure Kinect camera is connected and recognized by the operating system.
-**PUT_HERE_LINK TO AZURE KINECT CONFIG **
+**PUT_HERE_LINK TO ZED CONFIG **
 In the file **./conf/kinect_azure_settings.conf** there are stored settings related to the camera.
 Settings parameters are explained in **[OFICIAL_SITE]** 
 ```
