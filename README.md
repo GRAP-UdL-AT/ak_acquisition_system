@@ -27,9 +27,7 @@ cameras of different technologies, GNSS receiver) for in-field fruit yield testi
 * LAN (Local Area Network) to connect computers.
 * [Azure Kinect DK camera](https://docs.microsoft.com/es-es/azure/kinect-dk/hardware-specification) connected to the
   computer.
-* GNSS
-  receiver [Ardusimple SimpleRTK2B – Basic Starter Kit](https://www.ardusimple.com/product/simplertk2b-basic-starter-kit-ip65/)
-  .
+* GNSS receiver [Ardusimple SimpleRTK2B – Basic Starter Kit](https://www.ardusimple.com/product/simplertk2b-basic-starter-kit-ip65/).
 * [Stereolab ZED 2 camera](https://www.stereolabs.com/zed-2/) connected to the computer.
 
 ![SETUP_EXAMPLE](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/ak_acqs_example_of_use.png?raw=true)
@@ -85,7 +83,7 @@ Explain about packages distribution.
 
 | Package type | Package |  Url |  Description | 
 |--------------|---------|------|------| 
-| Virtual environment          | N/A    | N/A | All components of this software run in separate virtual environments.. |
+| Virtual environment          | N/A    | N/A | All components of this software run in separate virtual environments. |
 
 
 | Folder                    | Description                                                                                                | Linux | Windows | Jetpack|
@@ -97,10 +95,9 @@ Explain about packages distribution.
 | [server_rest_api/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api) | The server acts as an intermediary in the management of messages between remote clients and the management <br> console, and stores information about of the instructions sent and received. It uses SQLite database. | YES |  N/T | YES |
 
 **References:**
-* N/T --> Not Tested.
+* N/T --> The software has not yet been tested under the operating system at the time of publication.
 * YES --> Tested in operating system.
-* NO --> The software has not been tested under the operating system at the time of publication.
-
+* NO --> Support for this operating system is not yet available.
 
 ## Authorship
 
