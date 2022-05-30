@@ -8,8 +8,7 @@ cameras of different technologies, GNSS receiver) for in-field fruit yield testi
 
 ![AK_AQCS_PRESENTATION](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/ak_acqs_presentation.png?raw=true)
 
-## Contents (TODO)
-
+## Contents
 1. Pre-requisites.
 2. Functionalities developed.
 3. Files and folder description.
@@ -22,8 +21,7 @@ The following figure shows an example configuration, which will be used in other
 
 
 ### 1.1 Hardware
-
-* MSI Modern 15 A10RBS-484XES (New Taipei, Zhonghe Dist) Computer 1
+* MSI Modern 15 A10RBS-484XES (New Taipei, Zhonghe Dist) Computer 1.
 * Jetson Xavier NX (NVIDIA, Santa Clara, America) Computer 2.
 * LAN (Local Area Network) to connect computers.
 * [Azure Kinect DK camera](https://docs.microsoft.com/es-es/azure/kinect-dk/hardware-specification) connected to the
@@ -42,7 +40,6 @@ The following figure shows an example configuration, which will be used in other
   pyk4a [here](https://github.com/etiennedub/pyk4a/tree/master/example).
 
 ## 2. Functionalities developed
-
 The functionalities of AK_ACQS consist of remotely enabling and disabling clients, taking snapshots, starting and
 stopping video recordings, as well as logging latitude and longitude coordinates during the video recording time.
 
@@ -74,7 +71,7 @@ Documents and explanations accompanying AK_ACQS.
 
 | Folder                    | Description                                                                                                |
 |---------------------------|------------------------------------------------------------------------------------------------------------|
-| [REST API test/]https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/docs| Explanations about testing REST API.     |
+| [REST API test/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/docs/)| Explanations about testing REST API.     |
 
 
 ### 4.2 Package distribution format
