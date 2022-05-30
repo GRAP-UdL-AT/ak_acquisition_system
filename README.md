@@ -12,11 +12,11 @@ cameras of different technologies, GNSS receiver) for in-field fruit yield testi
 
 ## Contents (TODO)
 
-* Pre-requisites
-* Functionalities
-* Run
-* Files and folder description
-* Development tools and environment
+* Pre-requisites.
+* Functionalities.
+* Run.
+* Files and folder description.
+* Development tools and environment.
 
 ## Pre-requisites
 
@@ -139,56 +139,6 @@ Files description:
 * [Opencv](https://opencv.org/).
 * [Curses for Python](https://docs.python.org/3/howto/curses.html) ```pip install windows-curses```.
 
-### Notes for developers
-
-You can use the __main__.py for execute as first time in src/ak_frame_extractor/_ _ main _ _.py Configure the path of
-the project, if you use Pycharm, put your folder root like this:
-![ak_sm_recorder](https://github.com/GRAP-UdL-AT/ak_sm_recorder/blob/main/img/configuration_pycharm.png?raw=true)
-
-### Creating virtual environment Linux (TODO)
-
-```
-python3 -m venv ./venv
-source ./venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements_linux.txt
-```
-
-### Creating virtual environment  Windows (TODO)
-
-```
-%userprofile%"\AppData\Local\Programs\Python\Python38\python.exe" -m venv ./venv
-venv\Scripts\activate.bat
-pip install --upgrade pip
-pip install -r requirements_win.txt
-```
-
-** If there are some problems in Windows, follow [this](https://github.com/etiennedub/pyk4a/) **
-
-```
-pip install pyk4a --no-use-pep517 --global-option=build_ext --global-option="-IC:\Program Files\Azure Kinect SDK v1.4.1\sdk\include" --global-option="-LC:\Program Files\Azure Kinect SDK v1.4.1\sdk\windows-desktop\amd64\release\lib"
-```
-
-### Running software
-
-TODO_ADD_HERE_TEXT
-
-## Authorship
-
-This project is contributed by [GRAP-UdL-AT](http://www.grap.udl.cat/en/index.html). Please contact authors to report
-bugs juancarlos.miranda@udl.cat
-
-## Citation
-
-If you find this code useful, please consider citing:
-[GRAP-UdL-AT/ak_acquisition_system](https://github.com/GRAP-UdL-AT/ak_acquisition_system/).
-
-## Contents
-
-## Basic requirements (TODO)
-
-The requirements of software can be viewed in **requirements_linux.txt** and **requirements_win.txt**. The software has
-been tested on Ubuntu Linux 20.04 and Windows 10.
 
 ## Authorship
 
