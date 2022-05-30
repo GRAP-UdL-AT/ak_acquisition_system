@@ -48,13 +48,13 @@ cameras of different technologies, GNSS receiver) for in-field fruit yield testi
 The functionalities of AK_ACQS consist of remotely enabling and disabling clients, taking snapshots, starting and
 stopping video recordings, as well as logging latitude and longitude coordinates during the video recording time.
 
-* **[ENABLE REMOTE CLIENTS] allows the user to send an attention call to the devices to configure them in the initial
+* **[ENABLE REMOTE CLIENTS]** allows the user to send an attention call to the devices to configure them in the initial
   state of listening to orders.
-* **[TAKE CAPTURES] makes it easy for the user to capture short videos, automatically starting and stopping video or
+* **[TAKE CAPTURES]** makes it easy for the user to capture short videos, automatically starting and stopping video or
   snapshot recording.
-* **[START RECORDING/ STOP RECORDING] is the functionality that allows to send start and stop recording messages to all
+* **[START RECORDING/ STOP RECORDING]** is the functionality that allows to send start and stop recording messages to all
   connected clients. Remote clients managing a GNSS receiver will start/stop operations for coordinate capture.
-* **[DISABLE REMOTE CLIENTS], with this function the user remotely turns off the devices. These will stop operating when
+* **[DISABLE REMOTE CLIENTS]**, with this function the user remotely turns off the devices. These will stop operating when
   receiving and processing the message. The recorded files are stored on the host computers, just like the data
   collected by the GNSS receiver.
 
@@ -86,13 +86,16 @@ Explain about packages distribution.
 | Virtual environment          | N/A    | N/A | All components of this software run in separate virtual environments. |
 
 
-| Folder                    | Description                                                                                                | Linux | Windows | Jetpack|
-|---------------------------|------------------------------------------------------------------------------------------------------------|---|---|---|
-| [remote_client_generic/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_client_generic) | This is a template for future development, it is a dummy client can be used to test server connection. | YES |  YES | YES |
-| [remote_client_ak/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_client_ak) | Code to manage Azure Kinect DK camera                                                                      | YES |  YES | N/T |
-| [remote_client_zed/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_client_zed) | Code to manage ZED 2 camera and Ardusimple GNSS receiver                                                   | YES |  N/T | YES |
-| [remote_management_console/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_management_console) | Desktop GUI based on Tkinter library. Offers the possibility of sending instructions to the remote devices.| YES |  YES | N/T |
-| [server_rest_api/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api) | The server acts as an intermediary in the management of messages between remote clients and the management <br> console, and stores information about of the instructions sent and received. It uses SQLite database. | YES |  N/T | YES |
+
+The following table shows each component of AK_ACQS and the operating systems on which they have been tested.
+
+| Component                    | Linux | Windows | Jetpack|
+|---------------------------|---|---|---|
+| [remote_client_generic/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_client_generic) | YES |  YES | YES |
+| [remote_client_ak/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_client_ak) | YES |  YES | N/T |
+| [remote_client_zed/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_client_zed) | YES |  N/T | YES |
+| [remote_management_console/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_management_console) | YES |  YES | N/T |
+| [server_rest_api/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api) | YES |  N/T | YES |
 
 **References:**
 * N/T --> The software has not yet been tested under the operating system at the time of publication.
