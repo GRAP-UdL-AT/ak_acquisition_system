@@ -19,7 +19,7 @@ Folder description:
 | [docs/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_client_ak/docs/) | Documentation |
 | [log/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_client_ak/log/) | Execution log files |
 | [src/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_client_ak/src/) | Source code |
-| . | . |
+
 
 Files description:
 
@@ -33,7 +33,7 @@ Files description:
 | README.md | This file | . |
 | requirements_linux.txt | Requirements <br>```pip install -r requirements_linux.txt``` | Linux |
 | requirements_win.txt | Requirements <br>```pip install -r requirements_win.txt``` | Win |
-| . | . | . |
+
 
 To start the client you must follow the steps below:
 1. Install and run.
@@ -60,7 +60,7 @@ pip install -r requirements_linux.txt
 ```
 
 
-For Windows systems follow these steps from command line CMD
+For Windows systems follow these steps from command line CMD.
 
 ```
 %userprofile%"\AppData\Local\Programs\Python\Python38\python.exe" -m venv .\remote_client_ak-venv\Scripts\activate.bat

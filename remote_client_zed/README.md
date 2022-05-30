@@ -19,7 +19,7 @@ Folder description:
 | [docs/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_client_zed/docs/) | Documentation |
 | [log/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_client_zed/log/) | Execution log files |
 | [src/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_client_zed/src/) | Source code |
-| . | . |
+
 
 Files description:
 
@@ -61,7 +61,7 @@ pip install -r requirements_linux.txt
 ```
 
 
-For Windows systems follow these steps from command line CMD
+For Windows systems follow these steps from command line CMD.
 
 ```
 %userprofile%"\AppData\Local\Programs\Python\Python38\python.exe" -m venv .\remote_client_zed-venv\Scripts\activate.bat
@@ -97,7 +97,7 @@ port = 9000
 user = USER_ACCOUNT_HERE
 password = USER_PASSWORD_HERE
 sleep_time = 1
-path_video_output = C:\remote_client_ka\recorded_video
+path_video_output = /home/user/development/recorded_zed_video
 ```
 
 
@@ -118,10 +118,10 @@ $ curl -d "username=USER_ACCOUNT_HERE&password=USER_PASSWORD_HERE" http://localh
 {"access_token":"YIK0gxBdFdaAGZU4E0Y0bIOQx5FLap","expires_in":36000,"token_type":"Bearer","scope":"read write groups","refresh_token":"Tr6ugxQynW2hbpqnAsUdzVGVh9cO1F"}
 ```
 
-## 4. Check Azure Kinect settings ./conf/kinect_azure_settings.conf
+## 4. Check ZED settings ./conf/zed_settings.conf
 You must be sure that Azure Kinect camera is connected and recognized by the operating system.
 **PUT_HERE_LINK TO ZED CONFIG **
-In the file **./conf/kinect_azure_settings.conf** there are stored settings related to the camera.
+In the file **./conf/zed_settings.conf** there are stored settings related to the camera.
 Settings parameters are explained in **[OFICIAL_SITE]** 
 ```
 [DEFAULT]
