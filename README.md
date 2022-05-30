@@ -70,7 +70,7 @@ stopping video recordings, as well as logging latitude and longitude coordinates
 | [remote_client_zed/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_client_zed) | Code to manage ZED 2 camera and Ardusimple GNSS receiver                                                   |
 | [remote_management_console/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_management_console) | Desktop GUI based on Tkinter library. Offers the possibility of sending instructions to the remote devices.|
 | [server_rest_api/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api) | The server acts as an intermediary in the management of messages between remote clients and the management <br> console, and stores information about of the instructions sent and received. It uses SQLite database. |
-| .                         | . |
+
 
 ## Supplementary materials
 
@@ -78,21 +78,6 @@ stopping video recordings, as well as logging latitude and longitude coordinates
 |---------------------------|------------------------------------------------------------------------------------------------------------|
 | [REST API test/]https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/docs| Explanations about testing REST API.     |
 
-## Run AK_SM_RECORDER
-
-## Install
-
-```
-python ak_sm_recorder_main.py
-```
-
-### Windows (TODO)
-
-Copy folder FOLDER_HERE and execute "FILENAME_EXE.EXE".
-
-### Linux (TODO)
-
-..
 
 ## Package distribution format
 
@@ -104,40 +89,6 @@ Explain about packages distribution.
 | Linux        | .deb    | .deb | NOT IMPLEMENTED YET| 
 | PIP          | .whl    | .whl | PIP packages are stored in build/ | 
 | Virtual environment          | N/A    | N/A | . |
-| . | . | . |
-
-## Files and folder description
-
-Folder description:
-
-| Folders                    | Description            |
-|---------------------------|-------------------------|
-| docs/ | Documentation |
-| src/ | Source code |
-| win_exe_conf/ | Specifications for building .exe files with Pyinstaller.|
-| . | . |
-
-Files description:
-
-| Files                    | Description              | OS |
-|---------------------------|-------------------------|---|
-| activate.bat | Activate environments in Windows | WIN |
-| clean_files.bat | Clean files under CMD. | WIN |
-| ak_sm_recorder_main.bat | Executing main script | WIN |
-| build_pip.bat | Build PIP package to distribution | WIN |
-| build_win.bat | Build .EXE for distribution | WIN |
-| /src/ak_sm_recorder/__main__.py | Main function used in package compilation | Supported by Python |
-| /ak_sm_recorder_main.py | Python main function | Supported by Python |
-| setup.cfg | Package configuration PIP| Supported by Python |
-| pyproject.toml | Package description pip| Supported by Python |
-| . | . | . |
-
-## Development tools and environment
-
-* [curl](https://curl.se/)
-* [Pyinstaller](https://pyinstaller.org).
-* [Opencv](https://opencv.org/).
-* [Curses for Python](https://docs.python.org/3/howto/curses.html) ```pip install windows-curses```.
 
 
 ## Authorship
@@ -150,6 +101,7 @@ bugs juancarlos.miranda@udl.cat
 If you find this code useful, please consider citing:
 [Juan Carlos Miranda](https://github.com/juancarlosmiranda).
 
+
 ## Acknowledgements
 
 This work was funded by
@@ -160,8 +112,6 @@ Research of the Department of Business and Knowledge of the [Generalitat de Cata
 Miranda’s pre-doctoral fellowship ([2020 FI_B 00586](https://agaur.gencat.cat/)). The authors would also like to thank
 the Institut de Recerca i Tecnologia Agroalimentàries ([IRTA](https://www.irta.cat)) for allowing the use of their
 experimental fields, in particular Dr. Luís Asín and Dr. Jaume Lordán who have contributed to the success of this work.
-
-
 
 
 <img src="https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main//docs/img/logo_udl.png" height="60px" alt="Universitat de Lleida"/>
