@@ -7,6 +7,8 @@ This is an wrapper to use Zed functions as a thread process
 This class is used when we need to launch process  from loops as
 a remote client. Methods are similar to zed_manager.py
 
+Code converted to OOP and adapted from original functions made by https://github.com/Jordi-Gene-Mola
+
 Use:
 """
 import threading

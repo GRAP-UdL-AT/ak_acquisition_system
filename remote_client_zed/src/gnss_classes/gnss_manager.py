@@ -5,7 +5,7 @@ Project: AK_ACQS Azure Kinect Acquisition System https://github.com/GRAP-UdL-AT/
 * GRAP http://www.grap.udl.cat/
 
 Author: Juan Carlos Miranda. https://github.com/juancarlosmiranda
-        Code converted to OOP and adapted from original functoins made by https://github.com/Jordi-Gene-Mola
+        Code converted to OOP and adapted from original functions made by https://github.com/Jordi-Gene-Mola
 
 
 Date: August 2021

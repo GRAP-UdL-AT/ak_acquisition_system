@@ -25,3 +25,8 @@ remote_client_generic/.idea/misc.xml
 remote_client_generic/.idea/modules.xml
 remote_client_generic/.idea/remote_client_generic.iml
 remote_client_generic/.idea/vcs.xml
+remote_client_zed/.idea/inspectionProfiles/Project_Default.xml
+remote_client_zed/.idea/inspectionProfiles/profiles_settings.xml
+remote_client_zed/.idea/misc.xml
+remote_client_zed/.idea/modules.xml
+*.iml

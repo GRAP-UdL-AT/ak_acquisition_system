@@ -120,14 +120,7 @@ If you find this code useful, please consider citing:
 
 ## Acknowledgements
 
-This work was funded by
-the [Spanish Ministry of Science and Innovation and the Spanish Estate Research Agency](https://www.ciencia.gob.es) for
-the grant RTI2018-094222-B-I00 ([PAgFRUIT project](http://www.pagfruit.udl.cat/en/)). Secretariat of Universities and
-Research of the Department of Business and Knowledge of the [Generalitat de Catalunya](https://web.gencat.cat/) (grant
-2017 SGR 646), and Fons Social Europeu ([FSE](https://ec.europa.eu/)) are also thanked for financing Juan Carlos
-Miranda’s pre-doctoral fellowship ([2020 FI_B 00586](https://agaur.gencat.cat/)). The authors would also like to thank
-the Institut de Recerca i Tecnologia Agroalimentàries ([IRTA](https://www.irta.cat)) for allowing the use of their
-experimental fields, in particular Dr. Luís Asín and Dr. Jaume Lordán who have contributed to the success of this work.
+This work was funded by the Spanish Ministry of Science and Innovation and the Spanish Estate Research Agency through grant RTI2018-094222-B-I00 (PAgFRUIT project). The Secretariat of Universities and Research of the Department of Business and Knowledge of the Generalitat de Catalunya (grant 2017 SGR 646), and Fons Social Europeu (FSE) are also thanked for financing Juan Carlos Miranda’s pre-doctoral fellowship (2020 FI_B 00586). The work of Jordi Gené-Mola was supported by the Spanish Ministry of Universities through a Margarita Salas postdoctoral grant funded by the European Union - NextGenerationEU. The authors would also like to thank the Institut de Recerca i Tecnologia Agroalimentàries (IRTA) for allowing the use of their experimental fields, and in particular Dr. Luís Asín and Dr. Jaume Lordán who have contributed to the success of this work.
 
 
 <img src="https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main//docs/img/logo_udl.png" height="60px" alt="Universitat de Lleida"/>

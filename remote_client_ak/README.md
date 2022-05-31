@@ -153,11 +153,6 @@ Explain about packages distribution.
 |--------------|---------|------|------|
 | Virtual environment          | N/A    | Testing in Ubuntu 20.04 and Windows 10 operating systems | . |
 
-## Basic requirements (TODO)
-
-The requirements of software can be viewed in **requirements_linux.txt** and **requirements_win.txt**. The software has
-been tested on Ubuntu Linux 20.04 and Windows 10.
-
 ## Authorship
 
 This project is contributed by [GRAP-UdL-AT](http://www.grap.udl.cat/en/index.html). Please contact authors to report
