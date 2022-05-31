@@ -86,7 +86,7 @@ Check file for configurations settings in **conf/client_settings.conf**.
 For example if your server is listening on IP 192.168.43.110, configure this number in field **host**.
 Configure the username and password, put it in the respective fields as plain text.
 Set the sleep time, this parameter ensures that the remote client will remain waiting to query data from the server.
-Set **path_video_output** to configure the path to store videos in .mkv format.
+Set **path_video_output** to configure the path to store videos in .mkv format. For a graphical example see [[1.1 Example configuration]](https://github.com/GRAP-UdL-AT/ak_acquisition_system#11-example-configuration---capturing-fruit-data-using-the-ak_acqs-software)
 
 ```
 [DEFAULT]

@@ -116,9 +116,11 @@ $ curl -d "username=USER_ACCOUNT_HERE&password=USER_PASSWORD_HERE" http://localh
 ## 4. Check Azure Kinect settings ./conf/zed_settings.conf
 
 You must be sure that ZED 2 camera is connected and recognized by the operating system.
-**PUT_HERE_LINK TO ZED 2 CONFIG **
+[ZED 2](https://www.stereolabs.com/zed-2/).
 In the file **./conf/zed_settings.conf** there are stored settings related to the camera. Settings parameters are
-explained in **[OFICIAL_SITE]**
+explained in [API Documentation](https://www.stereolabs.com/docs/api/).
+For a graphical example with all the components of AK_ACQS see [[1.1 Example configuration]](https://github.com/GRAP-UdL-AT/ak_acquisition_system#11-example-configuration---capturing-fruit-data-using-the-ak_acqs-software)
+
 
 ```
 [DEFAULT]

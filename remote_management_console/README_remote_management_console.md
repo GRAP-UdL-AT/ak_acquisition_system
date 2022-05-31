@@ -28,8 +28,8 @@ In server machine, start server executing from command line:
 ## 3. Test connectivity
 ### 3.1 Changes in ./conf/ui_settings.conf
 Check file for configurations settings in **./conf/ui_settings.conf**.
-For example if your server is listening on IP 192.168.1.203, configure this number in field **host**.
-Configure the username and password, put it in the respective fields as plain text.
+For example if your server is listening on IP 192.168.43.110, configure this number in field **host**.
+Configure the username and password, put it in the respective fields as plain text. For a graphical example see [[1.1 Example configuration]](https://github.com/GRAP-UdL-AT/ak_acquisition_system#11-example-configuration---capturing-fruit-data-using-the-ak_acqs-software)
 ```
 [DEFAULT]
 protocol = http

@@ -17,7 +17,8 @@ cameras of different technologies, GNSS receiver) for in-field fruit yield testi
 
 ## 1. Pre-requisites
 
-This section explains aspects related to the pre-requisites needed to run AK_ACQS, hardware and software used in the experiments.
+This section explains aspects related to the pre-requisites needed to run AK_ACQS, hardware and software used in the
+experiments.
 
 ### 1.1 Example configuration - Capturing fruit data using the AK_ACQS software
 
