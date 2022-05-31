@@ -59,7 +59,7 @@ $ curl -d "username=USER_ACCOUNT_HERE&password=USER_PASSWORD_HERE" http://HOST_S
 ## Package dependencies
 This software need the following packages:
 ```
-
+.
 ```
 
 ## Authorship
