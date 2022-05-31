@@ -55,7 +55,7 @@ pip install -r requirements_win.txt
 ## 2. Start REST API server
 
 For more information about "REST API server"
-check [here](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/)
+check [here](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/).
 In server machine, start server executing from command line:
 
 ```
