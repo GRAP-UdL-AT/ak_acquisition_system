@@ -66,8 +66,8 @@ In server machine, start server executing from command line:
 
 ### 3.1 Changes in ./conf/ui_settings.conf
 Check file for configurations settings in **./conf/ui_settings.conf**.
-For example if your server is listening on IP 192.168.1.203, configure this number in field **host**.
-Configure the username and password, put it in the respective fields as plain text.
+For example if your server is listening on IP 192.168.43.110, configure this number in field **host**.
+Configure the username and password, put it in the respective fields as plain text. For a graphical example see [[1.1 Example configuration]](https://github.com/GRAP-UdL-AT/ak_acquisition_system#11-example-configuration---capturing-fruit-data-using-the-ak_acqs-software)
 ```
 [DEFAULT]
 protocol = http
@@ -80,17 +80,15 @@ password = USER_PASSWORD_HERE
 
 ### 3.2 Check connection to server
 
-After configure the allowed host, check connectivity to your server with [curl](https://curl.se/) tool. Where **
-USER_ACCOUNT_HERE** and **USER_PASSWORD_HERE** are the username and password you want.
-
+After configure the allowed host, check connectivity to your server **HOST_SERVER_IP** with [curl](https://curl.se/) tool.
+Where **USER_ACCOUNT_HERE** and **USER_PASSWORD_HERE** are the username and password you want.
 ```
-$ curl -d "username=USER_ACCOUNT_HERE&password=USER_PASSWORD_HERE" http://localhost:9000/authentication/login/
+$ curl -d "username=USER_ACCOUNT_HERE&password=USER_PASSWORD_HERE" http://HOST_SERVER_IP:9000/authentication/login/
 ```
 
 If the server is enabled, the response will be something like this:
-
 ```
-$ curl -d "username=USER_ACCOUNT_HERE&password=USER_PASSWORD_HERE" http://localhost:9000/authentication/login/
+$ curl -d "username=USER_ACCOUNT_HERE&password=USER_PASSWORD_HERE" http://HOST_SERVER_IP:9000/authentication/login/
 {"access_token":"YIK0gxBdFdaAGZU4E0Y0bIOQx5FLap","expires_in":36000,"token_type":"Bearer","scope":"read write groups","refresh_token":"Tr6ugxQynW2hbpqnAsUdzVGVh9cO1F"}
 ```
 
