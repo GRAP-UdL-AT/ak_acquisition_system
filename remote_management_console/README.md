@@ -12,7 +12,7 @@ Folder description:
 | [docs/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_management_console/docs/) | Documentation |
 | [log/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_management_console/log/) | Execution log files |
 | [src/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_management_console/src/) | Source code |
-| [src/conf/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_management_console/conf/) | Client configuration files |
+| [src/conf/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_management_console/src/conf/) | Client configuration files |
 
 
 Files description:
