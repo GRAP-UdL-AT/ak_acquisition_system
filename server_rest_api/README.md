@@ -34,8 +34,8 @@ To start the server you must follow the steps below:
 
 1. Install and run.
 2. Create database settings.
-3. Test connectivity.
-4. Start server
+3. Start server
+4. Test connectivity.
 
 ## 1. Install and run
 
@@ -133,7 +133,15 @@ Loads initial data into database. reset initial configurations with
 ./delete_reset_database.sh
 ```
 
-## 3. Test connectivity
+## 3. Start server
+
+For star the server process in Linux systems, execute as follows:
+
+```
+./rest_api_server_start.sh
+```
+
+## 4. Test connectivity
 
 After configure the allowed host, check connectivity to your server with [curl](https://curl.se/) tool. Where **user1**
 and **strong_pass1** are the username and password you want.
@@ -147,14 +155,6 @@ If the server is enabled, the response will be something like this:
 ```
 $ curl -d "username=user1&password=strong_pass1" http://localhost:9000/authentication/login/
 {"access_token":"YIK0gxBdFdaAGZU4E0Y0bIOQx5FLap","expires_in":36000,"token_type":"Bearer","scope":"read write groups","refresh_token":"Tr6ugxQynW2hbpqnAsUdzVGVh9cO1F"}
-```
-
-## 4. Start server
-
-For star the server process in Linux systems, execute as follows:
-
-```
-./rest_api_server_start.sh
 ```
 
 ## 5. Package distribution format
