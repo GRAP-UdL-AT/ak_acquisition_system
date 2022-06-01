@@ -19,6 +19,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEBUG = True
 
 # Data connection, configure here all params
+THIS_SERVER_IP='192.168.43.110'
 SERVER_IP = 'http://0.0.0.0'
 SERVER_PORT = ':9000'
 REST_API_SERVICE_URL = SERVER_IP + SERVER_PORT
@@ -44,7 +45,7 @@ USE_L10N = True
 USE_TZ = True
 
 # configure here IP
-ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', '192.168.43.110', 'localhost']
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', THIS_SERVER_IP, 'localhost']
 CORS_ORIGIN_ALLOW_ALL = True
 
 INSTALLED_APPS = [
