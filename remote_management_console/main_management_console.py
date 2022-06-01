@@ -18,6 +18,8 @@ Use:
 import locale
 import gettext
 import os
+import sys
+sys.path.append(os.path.join(os.path.abspath('.'), 'src'))
 from src.desktop_gui.gui_classes import DesktopConsole
 
 

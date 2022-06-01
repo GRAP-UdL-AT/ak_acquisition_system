@@ -8,7 +8,7 @@ numpy==1.22.4
 opencv-python==4.5.5.64
 path==16.4.0
 PyYAML==6.0
-pyzed @ file:///usr/local/zed/pyzed-3.7-cp38-cp38-linux_x86_64.whl
 requests==2.26.0
 serial==0.0.97
 urllib3==1.26.6
+pyzed @ file:///usr/local/zed/pyzed-3.7-cp38-cp38-linux_x86_64.whl
