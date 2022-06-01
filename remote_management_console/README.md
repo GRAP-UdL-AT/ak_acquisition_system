@@ -19,9 +19,10 @@ Files description:
 
 | Files                    | Description              | OS |
 |---------------------------|-------------------------|---|
+| creating_env_console.sh | Automatically create Python environments | Linux |
+| management_console_start.sh | Executing main script | Linux |
 | main_management_console.py | Python main function | Supported by Python |
 | activate.bat | Virtual environment | Win |
-| start_remote_management_console.bat | Executing main script | Win |
 | requirements_linux.txt | Requirements <br>```pip install -r requirements_linux.txt``` | Linux |
 | requirements_win.txt | Requirements <br>```pip install -r requirements_win.txt``` | Win |
 
