@@ -26,13 +26,14 @@ Files description:
 |---------------------------|-------------------------|---|
 | clean_files.sh | Clean recoded videos. | Linux |
 | enable_port.sh | Script that enable port for GNSS. | Linux |
-| main_client_zed.py | Executing main script ZED 2 | Linux |
-| main_client_zed_gnss.py | Executing main script ZED 2 + GNSS receiver | Linux |
-| README.md | This file | . |
+| creating_env_zed.sh | Automatically creates Python environments | Linux |
+| remote_client_zed_start.sh | Executing main script  from shell for ZED 2 | Linux |
+| remote_client_zed_gnss_start.sh | Executing main script  from shell for ZED 2 + GNSS | Linux |
+| main_client_zed.py | Executing main script ZED 2 | Supported by Python |
+| main_client_zed_gnss.py | Executing main script ZED 2 + GNSS receiver | Supported by Python |
 | requirements_jetson_xavier.txt | Requirements <br>```requirements_jetson_xavier.txt``` | Jetpack |
 | requirements_linux.txt | Requirements <br>```pip install -r requirements_linux.txt``` | Linux |
-| start_zed_client.sh | Executing main script  from shell for ZED 2 | Linux |
-| start_zed_gnss_client.sh | Executing main script  from shell for ZED 2 + GNSS | Linux |
+
 
 To start the client you must follow the steps below:
 
