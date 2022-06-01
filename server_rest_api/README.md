@@ -24,11 +24,11 @@ Files description:
 | Files                    | Description              | OS |
 |---------------------------|-------------------------|---|
 | broadcast.db.sqlite3 | Message database | . |
+| creating_env_server.sh | Automatically create Python environments | Linux |
 | delete_reset_database.sh | Apply changes in tables, reset database and load data from /src/initial_data_values/ | Linux |
 | rest_api_server_start.sh | Executing main script | Linux |
-| README.md | This file | . |
 | requirements_linux | Requirements <br>```pip install -r requirements_linux.txt``` | Linux |
-| . | . | . |
+
 
 To start the server you must follow the steps below:
 
