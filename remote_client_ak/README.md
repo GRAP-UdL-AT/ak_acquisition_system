@@ -25,12 +25,10 @@ Files description:
 
 | Files                    | Description              | OS |
 |---------------------------|-------------------------|---|
-| main_client_azure.py | . | . |
-| . | Apply changes in tables, reset database and load data from /src/initial_data_values/ | Linux |
-| .sh | Executing main script | Linux |
+| creating_env_ak.sh | Automatically creates Python environments | Linux |
+| remote_client_ak_start.sh | Executing main script | Linux |
+| main_client_azure.py | Python main function | Supported by Python |
 | activate.bat | Virtual environment | Win |
-| start_remote_client_ak.bat | Executing main script | Win |
-| README.md | This file | . |
 | requirements_linux.txt | Requirements <br>```pip install -r requirements_linux.txt``` | Linux |
 | requirements_win.txt | Requirements <br>```pip install -r requirements_win.txt``` | Win |
 
