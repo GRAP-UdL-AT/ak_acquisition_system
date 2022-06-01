@@ -19,7 +19,7 @@ Files description:
 
 | Files                    | Description              | OS |
 |---------------------------|-------------------------|---|
-| creating_env_console.sh | Automatically create Python environments | Linux |
+| creating_env_console.sh | Automatically creates Python environments | Linux |
 | management_console_start.sh | Executing main script | Linux |
 | main_management_console.py | Python main function | Supported by Python |
 | activate.bat | Virtual environment | Win |

@@ -22,14 +22,12 @@ Files description:
 
 | Files                    | Description              | OS |
 |---------------------------|-------------------------|---|
-| remote_client_main.py | . | . |
-| . | Apply changes in tables, reset database and load data from /src/initial_data_values/ | Linux |
-| .sh | Executing main script | Linux |
+| creating_env_generic_start.sh | Automatically creates Python environments     | Linux |
+| remote_client_generic_start.sh | Executing main script | Linux |
+| remote_client_main.py | Python main function | Supported by Python |
 | .bat | Executing main script | Win |
-| README.md | This file | . |
 | requirements_linux.txt | Requirements <br>```pip install -r requirements_linux.txt``` | Linux |
 | requirements_win.txt | Requirements <br>```pip install -r requirements_win.txt``` | Win |
-| . | . | . |
 
 To start the client you must follow the steps below:
 
@@ -98,7 +96,8 @@ sleep_time = 5
 
 ### 3.2 Check connection to server
 
-After configure the allowed host, check connectivity to your server **HOST_SERVER_IP** with [curl](https://curl.se/) tool. Where **
+After configure the allowed host, check connectivity to your server **HOST_SERVER_IP** with [curl](https://curl.se/)
+tool. Where **
 USER_ACCOUNT_HERE** and **USER_PASSWORD_HERE** are the username and password you want.
 
 ```
