@@ -1,13 +1,14 @@
 # AK_ACQS - Remote client Azure
 
-The solution allows recording data from Azure Kinect camera. It is a solution made up of
-three components: [REST API server](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/),
-remote clients connected to cameras, and user interface. The functions are as follows:
-* REST API server: receive requests, send group messages. 
-* Remote client: receives instructions from a central server,
-hosts devices. Make recordings and store data from them.
-* User interface: allows managing the operation
-of the assembly and issuing remote commands.
+This document describes the steps required to run the remote client that records data from the Azure Kinect camera as
+part of the ["AK_ACQS"](https://github.com/GRAP-UdL-AT/ak_acquisition_system) core solution. The core solution is made
+up of three components:
+
+* [REST API server:](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/) receive requests,
+  send group messages.
+* Remote clients: receives instructions from a central server, hosts devices. Make recordings and store data from them.
+* [Remote management console](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_management_console):
+  allows managing the operation of the assembly and issuing remote commands.
 
 ![REMOTE_CLIENT_AK](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/remote_client_ak/docs/img/remote_client_azure_presentation.png?raw=true)
 
@@ -62,14 +63,17 @@ To start the client you must follow the steps below:
 ### 3.1. Install
 
 * Install Azure Kinect camera drivers by following the instructions
-  at [azure_kinect_notes](https://github.com/juancarlosmiranda/azure_kinect_notes), depending on whether your operating system is Linux or Windows.
- 
+  at [azure_kinect_notes](https://github.com/juancarlosmiranda/azure_kinect_notes), depending on whether your operating
+  system is Linux or Windows.
+
 * [Linux] Create and activate the Python environment as follows:
+
 ```
 ./create_env_ak.sh
 ```
 
-For more information on the folder hierarchy used in development environments, go to [[Notes for developers]](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/NOTES_FOR_DEVELOPERS.md)
+For more information on the folder hierarchy used in development environments, go
+to [[Notes for developers]](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/NOTES_FOR_DEVELOPERS.md)
 
 * [Windows] Follow these steps from command line CMD.
 
@@ -84,8 +88,8 @@ pip install -r requirements_win.txt
 This step assumes that
 the ["REST API server"](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/) is configured
 and running. For more information about this component
-check [here](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/).
-On the server machine, start server by running the following command line:
+check [here](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/). On the server machine,
+start server by running the following command line:
 
 ```
 ./server_rest_api/server_start.sh
