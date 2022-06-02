@@ -15,6 +15,8 @@ Use:
 
 import logging
 import os
+import sys
+sys.path.append(os.path.join(os.path.abspath('.'), 'src'))
 from src.remote_client_g.remote_client import RemoteClient
 from src.remote_client_g.client_config import ClientConfig
 

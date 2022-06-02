@@ -6,6 +6,8 @@
 #
 # Author: Juan Carlos Miranda. https://github.com/juancarlosmiranda
 
+# echo "Go to user home";cd $HOME; echo "create development";mkdir -p development;cd development; echo "Downloading development script";cp ./preparing_setup.sh ./development/; chmod 755 preparing_setup.sh; ./preparing_setup.sh
+
 set -e
 
 FILENAME_ZIP='ak_acquisition_system-main.zip'
@@ -57,9 +59,9 @@ SERVER_REST_API_ENV_F=$ROOT_ENV_F$SERVER_REST_API_NAME$ENV_NAME/
 
 
 # drawing
-DRAW_LEVEL_0='|---\'
-DRAW_LEVEL_1='____|---\'
-DRAW_LEVEL_2='________|---\'
+DRAW_LEVEL_0='|---'
+DRAW_LEVEL_1='____|---'
+DRAW_LEVEL_2='________|---/'
 # software directories
 #|---\ak_acquisition_system-main
 #	|---\remote_client_ak
@@ -123,24 +125,9 @@ $CHMOD_CMD $REMOTE_CLIENT_ZED_F$EXT_SCRIPTS_SH
 $CHMOD_CMD $SERVER_REST_API_F$EXT_SCRIPTS_SH
 
 
-
-# create folder hierarchy
-#echo $ROOT_FOLDER_F$SERVER_REST_API_ENV_F
-
 echo $ROOT_ENV_F
 # create folder hierarchy
 $MKDIR_CMD $ROOT_ENV_F
-
-#$MKDIR_CMD $REMOTE_CLIENT_AK_ENV_F
-#$MKDIR_CMD $REMOTE_CLIENT_GENERIC_ENV_F
-#$MKDIR_CMD $REMOTE_CLIENT_ZED_ENV_F
-#$MKDIR_CMD $REMOTE_MANAGEMENT_CONSOLE_ENV_F
-#$MKDIR_CMD $SERVER_REST_API_ENV_F
-
-
-# creating environments
-#python3 -m venv $HOME/development_env/server_rest_api_venv
-#source $HOME/development_env/server_rest_api_venv/bin/activate
 
 
 

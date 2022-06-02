@@ -16,6 +16,8 @@ Use:
 
 import logging
 import os
+import sys
+sys.path.append(os.path.join(os.path.abspath('.'), 'src'))
 from time import gmtime
 import helpers.helper_zed_load_config as hc
 from remote_client_zed.client_config import ClientConfig

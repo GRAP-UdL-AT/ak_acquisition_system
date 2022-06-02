@@ -18,7 +18,9 @@ Use:
 import logging
 import os
 import src.helpers.helper_path as hp
-hp.kinect()
+#hp.kinect()
+import sys
+sys.path.append(os.path.join(os.path.abspath('.'), 'src'))
 import src.helpers.helper_load_config as hc
 from pyk4a import Config, ColorResolution, ImageFormat, DepthMode, FPS, WiredSyncMode
 from time import gmtime
