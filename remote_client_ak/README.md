@@ -36,13 +36,13 @@ Files description:
 
 To start the client you must follow the steps below:
 
-2.1. Install.
-2.2. Start server console.
-2.3. Test connectivity.
-2.4. Check Azure Kinect settings.
-2.5. Run.
-2.6. Check recorded videos.
-2.7. Problems checklist.
+* 2.1. Install.
+* 2.2. Start server console.
+* 2.3. Test connectivity.
+* 2.4. Check Azure Kinect settings.
+* 2.5. Run.
+* 2.6. Check recorded videos.
+* 2.7. Problems checklist.
 
 
 ### 2.1. Install
