@@ -34,29 +34,25 @@ Files description:
 
 
 To start the client you must follow the steps below:
-1. Install and run.
+1. Install.
 2. Start server console.
 3. Test connectivity.
 4. Check Azure Kinect settings.
-5. Check recorded videos.
-6. Problems checklist.
-7. Package distribution format.
+5. Run.   
+6. Check recorded videos.
+7. Problems checklist.
+8. Package distribution format.
 
 ## 1. Install and run
 
 In Linux systems execute as follows:
 
-Create and activate environment.
+* Install Azure Kinect camera drivers by following the instructions at [azure_kinect_notes](https://github.com/juancarlosmiranda/azure_kinect_notes).
+* Create and activate the Python environment, for more information on the folder hierarchy used in development environments, go to [[Notes for developers]](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/NOTES_FOR_DEVELOPERS.md)
 
 ```
-python3 -m pip install python-venv
-pip3 install python-venv
-python3 -m venv ./remote_client_ak-venv
-source ./remote_client_ka-venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements_linux.txt
+./create_env_ak.sh
 ```
-
 
 For Windows systems follow these steps from command line CMD.
 
@@ -132,18 +128,23 @@ wired_sync_mode=STANDALONE
 subordinate_delay_off_master_usec=0
 disable_streaming_indicator=True
 ```
+## 5. Run
+Run remote client.
+```
+./remote_client_ak_start.sh
+```
 
 
-## 5. Check recorded videos (TODO)
+## 6. Check recorded videos (TODO)
 ..
 
 
-## 6. Problems checklist
+## 7. Problems checklist
 
 * Check LAN connection.
 * Check user and password configurations.
 
-## 7. Package distribution format
+## 8. Package distribution format
 
 Explain about packages distribution.
 
