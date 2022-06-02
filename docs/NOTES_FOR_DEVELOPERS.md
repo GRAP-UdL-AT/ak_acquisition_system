@@ -2,7 +2,7 @@
 In this work, we propossed a hierarchy folder as following.
 
 ```
-|---/$HOME/development
+|---/$HOME
 	|---/development
 		|---/ak_acquisition_system-main
 			|---/remote_client_ak
