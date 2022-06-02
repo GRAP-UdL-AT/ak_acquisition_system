@@ -10,6 +10,12 @@ of the assembly and issuing remote commands.
 
 ![REMOTE_CLIENT_AK](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/remote_client_ak/docs/img/remote_client_azure_presentation.png?raw=true)
 
+## Contents
+
+1. Files and folder description.
+2. Package distribution format.
+3. Steps to start the client for the first time.
+
 ## 1. Files and folder description
 
 Folder description:
@@ -32,20 +38,27 @@ Files description:
 | requirements_linux.txt | Requirements <br>```pip install -r requirements_linux.txt``` | Linux |
 | requirements_win.txt | Requirements <br>```pip install -r requirements_win.txt``` | Win |
 
-## 2. Steps to start the client for the first time
+## 2. Package distribution format
+
+Explain about packages distribution.
+
+| Package type | Package |  Url |  Description | 
+|--------------|---------|------|------|
+| Virtual environment          | N/A    | Testing in Ubuntu 20.04 and Windows 10 operating systems | . |
+
+## 3. Steps to start the client for the first time
 
 To start the client you must follow the steps below:
 
-* 2.1. Install.
-* 2.2. Start server console.
-* 2.3. Test connectivity.
-* 2.4. Check Azure Kinect settings.
-* 2.5. Run.
-* 2.6. Check recorded videos.
-* 2.7. Problems checklist.
+* 3.1. Install.
+* 3.2. Start server console.
+* 3.3. Test connectivity.
+* 3.4. Check Azure Kinect settings.
+* 3.5. Run.
+* 3.6. Check recorded videos.
+* 3.7. Problems checklist.
 
-
-### 2.1. Install
+### 3.1. Install
 
 In Linux systems execute as follows:
 
@@ -67,7 +80,7 @@ pip install --upgrade pip
 pip install -r requirements_win.txt
 ```
 
-### 2.2. Start REST API server
+### 3.2. Start REST API server
 
 This step assumes that
 the ["REST API server"](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/) is configured
@@ -79,9 +92,9 @@ On the server machine, start server by running the following command line:
 ./server_rest_api/server_start.sh
 ```
 
-### 2.3. Test connectivity
+### 3.3. Test connectivity
 
-#### 2.3.1 Changes in ./conf/client_settings.conf
+#### 3.3.1 Changes in ./conf/client_settings.conf
 
 Check file for settings in **conf/client_settings.conf**. For example if your server is listening on IP 192.168.43.110,
 configure this number in field **host** and put the username and password, as plain text. Set the **sleep_time**, this
@@ -100,7 +113,7 @@ sleep_time = 1
 path_video_output = C:\remote_client_ka\recorded_video
 ```
 
-#### 2.3.2 Check connection to server (optional)
+#### 3.3.2 Check connection to server (optional)
 
 After configure the allowed host, check connectivity to your server **HOST_SERVER_IP** with [curl](https://curl.se/)
 tool. Where **
@@ -117,7 +130,7 @@ $ curl -d "username=USER_ACCOUNT_HERE&password=USER_PASSWORD_HERE" http://HOST_S
 {"access_token":"YIK0gxBdFdaAGZU4E0Y0bIOQx5FLap","expires_in":36000,"token_type":"Bearer","scope":"read write groups","refresh_token":"Tr6ugxQynW2hbpqnAsUdzVGVh9cO1F"}
 ```
 
-### 2.4 Check Azure Kinect settings ./conf/kinect_azure_settings.conf
+### 3.4 Check Azure Kinect settings ./conf/kinect_azure_settings.conf
 
 You need to make sure that the Azure Kinect camera is connected and recognized by the operating system. Follow the
 instructions in this ["azure_kinect_notes"](https://github.com/juancarlosmiranda/azure_kinect_notes) section if you
@@ -138,7 +151,7 @@ subordinate_delay_off_master_usec=0
 disable_streaming_indicator=True
 ```
 
-### 2.5. Run
+### 3.5. Run
 
 Run remote client.
 
@@ -146,22 +159,14 @@ Run remote client.
 ./remote_client_ak_start.sh
 ```
 
-### 2.6. Check recorded videos (TODO)
+### 3.6. Check recorded videos (TODO)
 
 ..
 
-### 2.7. Problems checklist
+### 3.7. Problems checklist
 
 * Check LAN connection.
 * Check user and password configurations.
-
-## 3. Package distribution format
-
-Explain about packages distribution.
-
-| Package type | Package |  Url |  Description | 
-|--------------|---------|------|------|
-| Virtual environment          | N/A    | Testing in Ubuntu 20.04 and Windows 10 operating systems | . |
 
 ## Authorship
 
