@@ -1,11 +1,12 @@
 # AK_ACQS - Remote client Azure
 
-The solution allows recording data from cameras housed in different computers, focusing on the same scene. The cameras
-are of different brands, models and technologies. Images are recorded with GPS coordinates. It is a solution made up of
+The solution allows recording data from Azure Kinect camera. It is a solution made up of
 three components: [REST API server](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/),
 remote clients connected to cameras, and user interface. The functions are as follows:
-REST API server: receive requests, send group messages. Remote client: receives instructions from a central server,
-hosts devices (cameras, GNSS). Make recordings and store data from them. User interface: allows managing the operation
+* REST API server: receive requests, send group messages. 
+* Remote client: receives instructions from a central server,
+hosts devices. Make recordings and store data from them.
+* User interface: allows managing the operation
 of the assembly and issuing remote commands.
 
 ![REMOTE_CLIENT_AK](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/remote_client_ak/docs/img/remote_client_azure_presentation.png?raw=true)
