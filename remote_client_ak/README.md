@@ -60,19 +60,17 @@ To start the client you must follow the steps below:
 
 ### 3.1. Install
 
-In Linux systems execute as follows:
-
 * Install Azure Kinect camera drivers by following the instructions
-  at [azure_kinect_notes](https://github.com/juancarlosmiranda/azure_kinect_notes).
-* Create and activate the Python environment, for more information on the folder hierarchy used in development
-  environments, go
-  to [[Notes for developers]](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/NOTES_FOR_DEVELOPERS.md)
-
+  at [azure_kinect_notes](https://github.com/juancarlosmiranda/azure_kinect_notes), depending on whether your operating system is Linux or Windows.
+ 
+* [Linux] Create and activate the Python environment as follows:
 ```
 ./create_env_ak.sh
 ```
 
-For Windows systems follow these steps from command line CMD.
+For more information on the folder hierarchy used in development environments, go to [[Notes for developers]](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/NOTES_FOR_DEVELOPERS.md)
+
+* [Windows] Follow these steps from command line CMD.
 
 ```
 %userprofile%"\AppData\Local\Programs\Python\Python38\python.exe" -m venv .\remote_client_ak-venv\Scripts\activate.bat
@@ -85,7 +83,7 @@ pip install -r requirements_win.txt
 This step assumes that
 the ["REST API server"](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/) is configured
 and running. For more information about this component
-check [here](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/)
+check [here](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/).
 On the server machine, start server by running the following command line:
 
 ```
