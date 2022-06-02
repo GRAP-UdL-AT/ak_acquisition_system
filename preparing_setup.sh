@@ -6,8 +6,6 @@
 #
 # Author: Juan Carlos Miranda. https://github.com/juancarlosmiranda
 
-# echo "Go to user home";cd $HOME; echo "create development";mkdir -p development;cd development; echo "Downloading development script";cp ./preparing_setup.sh ./development/; chmod 755 preparing_setup.sh; ./preparing_setup.sh
-
 set -e
 
 FILENAME_ZIP='ak_acquisition_system-main.zip'

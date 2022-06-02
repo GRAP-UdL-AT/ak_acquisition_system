@@ -77,15 +77,31 @@ stopping video recordings, as well as logging latitude and longitude coordinates
 
 ## 4. Development tools
 
-### 4.1 Supplementary materials
+### 4.1 Download this repository
+
+From Linux systems, run this script at the command line to automatically create directory hierarchies for the project's development
+environments. Then use the "create_env_xxxxxx.sh" scripts for each component to load the Python dependencies.
+
+```
+SOME_INLINE_SCRIPT_HERE
+```
+```
+SCRIPT INLINE will make this
+git clone https://github.com/GRAP-UdL-AT/ak_acquisition_system.git
+```
+
+
+
+### 4.2 Supplementary materials
 
 Documents and explanations accompanying AK_ACQS.
 
 | Folder                    | Description                                                                                                |
 |---------------------------|------------------------------------------------------------------------------------------------------------|
 | [REST API test/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/docs/)| Explanations about testing REST API.     |
+| [Notes for developers/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/NOTES_FOR_DEVELOPERS.md)| Explanations about development environment     |
 
-### 4.2 Package distribution format
+### 4.3 Package distribution format
 
 Distribution of AK_ACQS components.
 
@@ -93,7 +109,7 @@ Distribution of AK_ACQS components.
 |--------------|---------|------|------| 
 | Virtual environment          | N/A    | N/A | All components of this software run in separate virtual environments. |
 
-## 4.3 Supported operating systems
+### 4.3 Supported operating systems
 
 The following table shows each component of AK_ACQS and the operating systems on which they have been tested.
 
