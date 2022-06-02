@@ -50,12 +50,12 @@ Explain about packages distribution.
 
 ## 3. Steps to start the client for the first time
 
-To start the client you must follow the steps below:
+To start the client, you need to follow the steps below:
 
 * 3.1. Install.
-* 3.2. Start server console.
+* 3.2. Start REST API server.
 * 3.3. Test connectivity.
-* 3.4. Check Azure Kinect settings.
+* 3.4. Check Azure Kinect camera settings.
 * 3.5. Run.
 * 3.6. Check recorded videos.
 * 3.7. Problems checklist.
@@ -133,7 +133,7 @@ $ curl -d "username=USER_ACCOUNT_HERE&password=USER_PASSWORD_HERE" http://HOST_S
 {"access_token":"YIK0gxBdFdaAGZU4E0Y0bIOQx5FLap","expires_in":36000,"token_type":"Bearer","scope":"read write groups","refresh_token":"Tr6ugxQynW2hbpqnAsUdzVGVh9cO1F"}
 ```
 
-### 3.4 Check Azure Kinect settings ./conf/kinect_azure_settings.conf
+### 3.4 Check Azure Kinect camera settings ./conf/kinect_azure_settings.conf
 
 You need to make sure that the Azure Kinect camera is connected and recognized by the operating system. Follow the
 instructions in this ["azure_kinect_notes"](https://github.com/juancarlosmiranda/azure_kinect_notes) section if you
@@ -156,7 +156,7 @@ disable_streaming_indicator=True
 
 ### 3.5. Run
 
-Run remote client.
+Run remote client in Linux systems.
 
 ```
 ./remote_client_ak_start.sh
