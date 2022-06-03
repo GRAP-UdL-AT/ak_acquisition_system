@@ -1,15 +1,24 @@
 # AK_ACQS - Remote client ZED
 
-The solution allows recording data from cameras housed in different computers, focusing on the same scene. The cameras
-are of different brands, models and technologies. Images are recorded with GPS coordinates. It is a solution made up of
-three components: [REST API server](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/), remote clients connected to cameras, and user interface. The functions are as follows:
-REST API server: receive requests, send group messages. Remote client: receives instructions from a central server, hosts
-devices (cameras, GNSS). Make recordings and store data from them. User interface: allows managing the operation of the
-assembly and issuing remote commands.
+This document describes the steps required to run the remote client that records data from the ZED 2 camera and
+Ardusimple SimpleRTK2B as part of the ["AK_ACQS"](https://github.com/GRAP-UdL-AT/ak_acquisition_system) core solution.
+The core solution is made up of three components:
+
+* [REST API server:](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/) receive requests,
+  send group messages.
+* Remote clients: receives instructions from a central server, hosts devices. Make recordings and store data from them.
+* [Remote management console](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_management_console):
+  allows managing the operation of the assembly and issuing remote commands.
 
 ![REMOTE_CLIENT_ZED](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/remote_client_zed/docs/img/remote_client_zed_presentation.png?raw=true)
 
-## Files and folder description
+## Contents
+
+1. Files and folder description.
+2. Package distribution format.
+3. Steps to start the client for the first time.
+
+## 1. Files and folder description
 
 Folder description:
 
@@ -30,62 +39,90 @@ Files description:
 | remote_client_zed_start.sh | Executing main script  from shell for ZED 2 | Linux |
 | remote_client_zed_gnss_start.sh | Executing main script  from shell for ZED 2 + GNSS | Linux |
 | main_client_zed.py | Executing main script ZED 2 | Supported by Python |
-| main_client_zed_gnss.py | Executing main script ZED 2 + GNSS receiver | Supported by Python |
+| main_client_zed_gnss.py | Executing main script ZED 2 + Ardusimple SimpleRTK2B | Supported by Python |
 | requirements_jetson_xavier.txt | Requirements <br>```requirements_jetson_xavier.txt``` | Jetpack |
 | requirements_linux.txt | Requirements <br>```pip install -r requirements_linux.txt``` | Linux |
 
+## 2. Package distribution format
 
-To start the client you must follow the steps below:
+Explain about packages distribution.
 
-1. Install and run.
-2. Start server console.
-3. Test connectivity.
-4. Check Azure Kinect settings.
-5. Check recorded videos.
-6. Problems checklist.
-7. Package distribution format.
+| Package type | Package |  Url |  Description | 
+|--------------|---------|------|------|
+| Virtual environment          | N/A    | Testing in Ubuntu 20.04 and Windows 10 operating systems | . |
 
-## 1. Install and run
+## 3. Steps to start the client for the first time
 
-In Linux systems execute as follows:
+To start the client, you need to follow the steps below:
 
-Create and activate environment.
+* 3.1. Install.
+* 3.2. Start REST API server.
+* 3.3. Test connectivity.
+* 3.4. Check ZED 2 camera settings.
+* 3.5. Run.
+* 3.6. Check recorded videos.
+* 3.7. Problems checklist.
+
+### 3.1. Install
+
+* Install ZED 2 camera drivers by following the instructions
+  at [zed_2_camera_notes](https://github.com/juancarlosmiranda/zed_2_camera_notes), depending on whether your operating
+  system is Linux or Windows.
+
+* [Linux] Create and activate the Python environment as follows:
 
 ```
-python3 -m pip install python-venv
-pip3 install python-venv
-python3 -m venv ./remote_client_zed-venv
-source ./remote_client_ka-venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements_linux.txt
+./create_env_zed.sh
 ```
 
-For Windows systems follow these steps from command line CMD.
+* [Jetpack] In Jetson platforms:
+
+```
+./create_env_zed_jetson.sh
+```
+
+* [Windows 10] Follow these steps from command line CMD.
 
 ```
 %userprofile%"\AppData\Local\Programs\Python\Python38\python.exe" -m venv .\remote_client_zed-venv\Scripts\activate.bat
 pip install --upgrade pip
-pip install -r requirements_win.txt
+pip install -r requirements_windows.txt
 ```
 
-## 2. Start REST API server
+Some requirements are different between platforms, versions can be viewed in **requirements_linux.txt** , **
+requirements_jetson_xavier.txt**, **requirements_windows.txt** for Ubuntu Linux 20.04 ,Jetpack and Windows 10
+respectively.
 
-For more information about "REST API server"
-check [here](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/)
-In server machine, start server executing from command line:
+For more information on the folder hierarchy used in development environments, go
+to [[Notes for developers]](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/NOTES_FOR_DEVELOPERS.md)
+
+### 3.2. Start REST API server
+
+This step assumes that
+the ["REST API server"](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/) is configured
+and running. For more information about this component
+check [here](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/). On the server machine,
+start server by running the following command line:
 
 ```
 ./server_rest_api/server_start.sh
 ```
 
-## 3. Test connectivity
+### 3.3. Test connectivity
 
-### 3.1 Changes in ./conf/client_settings.conf
+#### 3.3.1 Changes in ./conf/client_settings.conf
 
 Check file for configurations settings in **conf/client_settings.conf**. For example if your server is listening on IP
 192.168.43.110, configure this number in field **host**. Configure the username and password, put it in the respective
 fields as plain text. Set the sleep time, this parameter ensures that the remote client will remain waiting to query
 data from the server. Set **path_video_output** to configure the path to store videos in .mkv format.
+
+Check file for settings in **conf/client_settings.conf**. For example if your server is listening on IP 192.168.43.110,
+configure this number in field **host** and put the username and password, as plain text. Set the **sleep_time**, this
+parameter ensures that the remote client will remain waiting to query data from the server. Set **path_video_output** to
+configure the path to store videos in [SVO format](https://www.stereolabs.com/docs/video/recording/). For a graphical
+example
+see [[1.1 Example configuration]](https://github.com/GRAP-UdL-AT/ak_acquisition_system#11-example-configuration---capturing-fruit-data-using-the-ak_acqs-software)
 
 ```
 [DEFAULT]
@@ -98,9 +135,10 @@ sleep_time = 1
 path_video_output = /home/user/development/recorded_zed_video
 ```
 
-### 3.2 Check connection to server
+#### 3.3.2 Check connection to server (optional)
 
-After configure the allowed host, check connectivity to your server **HOST_SERVER_IP** with [curl](https://curl.se/) tool. Where **
+After configure the allowed host, check connectivity to your server **HOST_SERVER_IP** with [curl](https://curl.se/)
+tool. Where **
 USER_ACCOUNT_HERE** and **USER_PASSWORD_HERE** are the username and password you want.
 
 ```
@@ -114,14 +152,12 @@ $ curl -d "username=USER_ACCOUNT_HERE&password=USER_PASSWORD_HERE" http://HOST_S
 {"access_token":"YIK0gxBdFdaAGZU4E0Y0bIOQx5FLap","expires_in":36000,"token_type":"Bearer","scope":"read write groups","refresh_token":"Tr6ugxQynW2hbpqnAsUdzVGVh9cO1F"}
 ```
 
-## 4. Check Azure Kinect settings ./conf/zed_settings.conf
+### 3.4 Check ZED 2 camera settings ./conf/zed_settings.conf
 
-You must be sure that ZED 2 camera is connected and recognized by the operating system.
-[ZED 2](https://www.stereolabs.com/zed-2/).
-In the file **./conf/zed_settings.conf** there are stored settings related to the camera. Settings parameters are
-explained in [API Documentation](https://www.stereolabs.com/docs/api/).
-For a graphical example with all the components of AK_ACQS see [[1.1 Example configuration]](https://github.com/GRAP-UdL-AT/ak_acquisition_system#11-example-configuration---capturing-fruit-data-using-the-ak_acqs-software)
-
+You need to make sure that the ZED 2 camera is connected and recognized by the operating system. Follow the instructions
+in this [zed_2_camera_notes](https://github.com/juancarlosmiranda/zed_2_camera_notes) section if you haven't installed
+the camera before. In the file **./conf/zed_settings.conf** there are camera-related settings stored. Settings
+parameters are explained in [**[API Documentation]**](https://www.stereolabs.com/docs/api/).
 
 ```
 [DEFAULT]
@@ -147,38 +183,22 @@ sensors_required = False
 svo_real_time_mode = False
 ```
 
-## 5. Check recorded videos (TODO)
+### 3.5. Run
+
+Run remote client in Linux systems.
+
+```
+./remote_client_ak_start.sh
+```
+
+### 3.6. Check recorded videos (TODO)
 
 The data recorded is saved in folders "recorded_gnss/" and "recorded_video/".
 
-## 6. Problems checklist
+## 3.7. Problems checklist
 
 * Check LAN connection.
 * Check user and password configurations.
-
-## 7. Package distribution format
-
-Explain about packages distribution.
-
-| Package type | Package |  Url |  Description | 
-|--------------|---------|------|------|
-| Virtual environment          | N/A    | Testing in Ubuntu 20.04 and Windows 10 operating systems | . |
-
-## Basic requirements (TODO)
-
-The requirements of software can be viewed in **requirements_linux.txt** and **requirements_jetson_xavier.txt**. The
-software has been tested on Ubuntu Linux 20.04 and Jetpack.
-
-### Package dependencies (TODO)
-
-This software need the following packages:
-
-```
-pip install pyzed
-pip install path
-pip install opencv-python
-...
-```
 
 ### Special notes about Jetson Xavier platform
 
@@ -198,4 +218,5 @@ bugs juancarlos.miranda@udl.cat
 ## Citation
 
 If you find this code useful, please consider citing:
-[Juan Carlos Miranda](https://github.com/juancarlosmiranda).
+[AK_ACQS - ak Acquisition System](https://github.com/GRAP-UdL-AT/ak_acquisition_system).
+
