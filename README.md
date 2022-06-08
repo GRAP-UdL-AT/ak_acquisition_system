@@ -79,18 +79,18 @@ stopping video recordings, as well as logging latitude and longitude coordinates
 
 ### 4.1 Download this repository
 
-From Linux systems, run this script at the command line to automatically create directory hierarchies for the project's development
-environments. Then use the "create_env_xxxxxx.sh" scripts for each component to load the Python dependencies.
+From Linux systems, run this script at the command line to automatically create directory hierarchies for the project's
+development environments. Then use the "create_env_xxxxxx.sh" scripts for each component to load the Python
+dependencies.
 
 ```
 SOME_INLINE_SCRIPT_HERE
 ```
+
 ```
 SCRIPT INLINE will make this
 git clone https://github.com/GRAP-UdL-AT/ak_acquisition_system.git
 ```
-
-
 
 ### 4.2 Supplementary materials
 
@@ -148,13 +148,14 @@ If you find this code useful, please consider citing:
 ## Acknowledgements
 
 This work was funded by the Spanish Ministry of Science and Innovation and the Spanish Estate Research Agency through
-grant RTI2018-094222-B-I00 (PAgFRUIT project). The Secretariat of Universities and Research of the Department of
-Business and Knowledge of the Generalitat de Catalunya (grant 2017 SGR 646), and Fons Social Europeu (FSE) are also
-thanked for financing Juan Carlos Miranda’s pre-doctoral fellowship (2020 FI_B 00586). The work of Jordi Gené-Mola was
-supported by the Spanish Ministry of Universities through a Margarita Salas postdoctoral grant funded by the European
-Union - NextGenerationEU. The authors would also like to thank the Institut de Recerca i Tecnologia Agroalimentàries (
-IRTA) for allowing the use of their experimental fields, and in particular Dr. Luís Asín and Dr. Jaume Lordán who have
-contributed to the success of this work.
+grant RTI2018-094222-B-I00 (PAgFRUIT project). This work was also supported by the Secretaria d’Universitats i Recerca
+del Departament d’Empresa i Coneixement de la Generalitat de Catalunya under Grant 2017-SGR-646. The Secretariat of
+Universities and Research of the Department of Business and Knowledge of the Generalitat de Catalunya and Fons Social
+Europeu (FSE) are also thanked for financing Juan Carlos Miranda’s pre-doctoral fellowship (2020 FI_B 00586). The work
+of Jordi Gené-Mola was supported by the Spanish Ministry of Universities through a Margarita Salas postdoctoral grant
+funded by the European Union - NextGenerationEU. The authors would also like to thank the Institut de Recerca i
+Tecnologia Agroalimentàries (IRTA) for allowing the use of their experimental fields, and in particular Dr. Luís Asín
+and Dr. Jaume Lordán who have contributed to the success of this work.
 
 
 <img src="https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main//docs/img/logo_udl.png" height="60px" alt="Universitat de Lleida"/>
