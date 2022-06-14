@@ -84,11 +84,6 @@ development environments. Then use the "create_env_xxxxxx.sh" scripts for each c
 dependencies.
 
 ```
-SOME_INLINE_SCRIPT_HERE
-```
-
-```
-SCRIPT INLINE will make this
 git clone https://github.com/GRAP-UdL-AT/ak_acquisition_system.git
 ```
 
