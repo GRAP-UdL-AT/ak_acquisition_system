@@ -9,4 +9,4 @@
 # Author: Juan Carlos Miranda. https://github.com/juancarlosmiranda
 
 echo "Enabling port to Ardusimple GNSS receiver!!"
-echo grap12345 | sudo -S chmod 666 /dev/ttyACM0
+echo YOUR_PASSWORD_HERE | sudo -S chmod 666 /dev/ttyACM0
