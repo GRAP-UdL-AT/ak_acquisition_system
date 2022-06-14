@@ -34,7 +34,7 @@ Files description:
 | Files                    | Description              | OS |
 |---------------------------|-------------------------|---|
 | clean_files.sh | Clean recoded videos. | Linux |
-| enable_port.sh | Script that enable port for GNSS. | Linux |
+| enable_port.sh | Script that enable port for GNSS receiver. | Linux |
 | creating_env_zed.sh | Automatically creates Python environments | Linux |
 | remote_client_zed_start.sh | Executing main script  from shell for ZED 2 | Linux |
 | remote_client_zed_gnss_start.sh | Executing main script  from shell for ZED 2 + GNSS | Linux |
