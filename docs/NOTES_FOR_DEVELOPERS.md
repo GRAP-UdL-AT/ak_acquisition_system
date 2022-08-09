@@ -38,4 +38,5 @@ Generic.
 
 This video shows how the components can interact with each other using the remote management console, especially showing
 Azure Kinect remote client activations.
+
 ![server_video_demo_02](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/server_demo_usage_02.gif?raw=true)
