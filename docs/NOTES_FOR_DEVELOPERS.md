@@ -2,7 +2,7 @@
 
 ## 1. Hierarchy folder
 
-In this work, we propossed a hierarchy folder as following.
+In this work, we proposed a hierarchy folder as following.
 
 ```
 |---/$HOME
@@ -29,6 +29,8 @@ Automatic scripts were developed to facilitate work for developers.
 
 ### 2.1 Demo - AK_ACQS components working together
 
-A sequence about AK_ACQS working with a remote client generic. This video shows the use of the remote management
-console.
+This video shows how the components can interact with each other using the remote management console. Represents a
+sequence about the components of AK_ACQS that work together: Server Rest API, Remote Management Console, Remote Client
+Generic.
 ![Server video demo](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/server_demo_usage_01.gif?raw=true)
+
