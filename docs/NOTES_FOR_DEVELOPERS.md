@@ -1,4 +1,7 @@
 # AK_ACQS - Notes for developers
+
+## 1. Hierarchy folder
+
 In this work, we propossed a hierarchy folder as following.
 
 ```
@@ -21,3 +24,11 @@ In this work, we propossed a hierarchy folder as following.
 ```
 
 Automatic scripts were developed to facilitate work for developers.
+
+## 2. Demos
+
+### 2.1 Demo using - Capturing fruit data using the AK_ACQS software
+
+A sequence about AK_ACQS working with a remote client generic. This video shows the use of the remote management
+console.
+![Server video demo](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/server_demo_usage_01.gif?raw=true)
