@@ -188,7 +188,7 @@ svo_real_time_mode = False
 Run remote client in Linux systems.
 
 ```
-./remote_client_ak_start.sh
+./remote_client_zed_start.sh
 ```
 
 ### 3.6. Check recorded videos (TODO)
