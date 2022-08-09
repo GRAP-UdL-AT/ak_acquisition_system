@@ -27,7 +27,7 @@ Automatic scripts were developed to facilitate work for developers.
 
 ## 2. Demos
 
-### 2.1 Demo using - Capturing fruit data using the AK_ACQS software
+### 2.1 Demo - AK_ACQS components working together
 
 A sequence about AK_ACQS working with a remote client generic. This video shows the use of the remote management
 console.
