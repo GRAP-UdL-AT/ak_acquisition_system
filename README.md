@@ -160,7 +160,7 @@ Agroalimentàries (IRTA) for allowing the use of their experimental fields, and 
 Lordán who have contributed to the success of this work.
 
 
-<img src="https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/logo_PAgFRUIT" height="60px" alt="PAgFRUIT Research Project"/>
+<img src="https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/logo_PAgFRUIT.png" height="60px" alt="PAgFRUIT Research Project"/>
 <img src="https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/logo_udl.png" height="60px" alt="Universitat de Lleida"/>
 <img src="https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main//docs/img/logo_goverment_calonia.png" height="60px" alt="Generalitat de Catalunya"/>
 <img src="https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/img/logo_min_science.png" height="60px" alt="Ministerio de Ciencia, Innovación y Universidades"/>
