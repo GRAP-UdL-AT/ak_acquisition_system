@@ -149,14 +149,14 @@ abstract = {The emergence of low-cost 3D sensors, and particularly RGB-D cameras
 
 ## Acknowledgements
 
-This work is a result of the RTI2018-094222-B-I00 project (PAgFRUIT) granted by MCIN/AEI and by the European Regional
+This work is a result of the RTI2018-094222-B-I00 project [(PAgFRUIT)](https://www.pagfruit.udl.cat/en/) granted by MCIN/AEI and by the European Regional
 Development Fund (ERDF). This work was also supported by the Secretaria d’Universitats i Recerca del Departament
 d’Empresa i Coneixement de la Generalitat de Catalunya under Grant 2017-SGR-646. The Secretariat of Universities and
-Research of the Department of Business and Knowledge of the Generalitat de Catalunya and Fons Social Europeu (FSE) are
-also thanked for financing Juan Carlos Miranda’s pre-doctoral fellowship (2020 FI_B 00586). The work of Jordi Gené-Mola
+Research of the Department of Business and Knowledge of the [Generalitat de Catalunya](https://web.gencat.cat) and Fons Social Europeu (FSE) are
+also thanked for financing Juan Carlos Miranda’s pre-doctoral fellowship [(2020 FI_B 00586)](https://agaur.gencat.cat/). The work of Jordi Gené-Mola
 was supported by the Spanish Ministry of Universities through a Margarita Salas postdoctoral grant funded by the
 European Union - NextGenerationEU. The authors would also like to thank the Institut de Recerca i Tecnologia
-Agroalimentàries (IRTA) for allowing the use of their experimental fields, and in particular Dr. Luís Asín and Dr. Jaume
+Agroalimentàries [(IRTA)](https://www.irta.cat/es/) for allowing the use of their experimental fields, and in particular Dr. Luís Asín and Dr. Jaume
 Lordán who have contributed to the success of this work.
 
 
