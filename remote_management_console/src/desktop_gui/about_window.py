@@ -18,7 +18,7 @@ class AboutWindow(tk.Toplevel):
     def __init__(self, parent):
         super().__init__(parent)
         # self.geometry(GUIFrameExtractorConfig2.geometry_about)
-        self.geometry('320x480')
+        self.geometry('350x480')
         self.title(_('About...'))
         self.resizable(width=False, height=False)  # do not change the size
         self.attributes('-topmost', True)
@@ -26,13 +26,20 @@ class AboutWindow(tk.Toplevel):
         about_label = tk.Label(self, text=_('Management Console'))
         about_label.config(bg="#00ffff", font=("Verdana", 12))
         about_label.pack(anchor=tk.CENTER)
-        tinfo = tk.Text(self, width=40, height=5)
+        tinfo = tk.Text(self, width=80, height=15)
 
-        about_text_info = f'Size estimation project.\n' \
-                          f'Juan Carlos Miranda\n' \
-                          f'https://github.com/juancarlosmiranda\n' \
+        about_text_info = f' \n' \
+                          f'Created by: Juan Carlos Miranda\n' \
+                          f'Site: https://github.com/juancarlosmiranda\n' \
                           f'November 2021 \n' \
-                          f'Software under development v0.1\n'
+                          f' \n' \
+                          f'PAgFRUIT project RTI2018-094222-B-I00\n' \
+                          f'http://www.pagfruit.udl.cat/\n' \
+                          f' \n' \
+                          f'Research Group on AgroICT & Precision Agriculture\n' \
+                          f'GRAP Universitat de Lleida\n' \
+                          f'Agrotecnio - CERCA Center\n' \
+                          f'https://www.grap.udl.cat/\n'
 
         tinfo.insert("1.0", about_text_info)
         tinfo.pack(anchor=tk.CENTER)
