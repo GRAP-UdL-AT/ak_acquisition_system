@@ -7,7 +7,7 @@ Project: AK_ACQS Azure Kinect Acquisition System https://github.com/GRAP-UdL-AT/
 Author: Adapted code from
 Date: August 2021
 Description:
-
+    Adapted from from https://github.com/etiennedub/pyk4a/
 Use:
 """
 

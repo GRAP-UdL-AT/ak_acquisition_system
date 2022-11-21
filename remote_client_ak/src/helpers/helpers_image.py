@@ -4,7 +4,7 @@ Project: AK_ACQS Azure Kinect Acquisition System https://github.com/GRAP-UdL-AT/
 * PAgFRUIT http://www.pagfruit.udl.cat/en/
 * GRAP http://www.grap.udl.cat/
 
-Author: Adapted code from
+Author: Adapted code from https://github.com/etiennedub/pyk4a/
 Date: August 2021
 Description:
 

@@ -53,5 +53,5 @@ if __name__ == '__main__':
     remote_client_zed_gnss_obj.run()
 
 # todo. add checks is bad functions or errors
-# todo: put in a config for mremote and add inheritance
+# todo: put in a config for remote and add inheritance
 # todo: add utc time

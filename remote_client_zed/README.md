@@ -66,7 +66,7 @@ To start the client, you need to follow the steps below:
 ### 3.1. Install
 
 * Install ZED 2 camera drivers by following the instructions
-  at [zed_2_camera_notes](https://github.com/juancarlosmiranda/zed_2_camera_notes), depending on whether your operating
+  at [zed_2_camera_notes](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/remote_client_zed/docs/zed_2_camera_notes), depending on whether your operating
   system is Linux or Windows.
 
 * [Linux] Create and activate the Python environment as follows:
