@@ -1,4 +1,4 @@
-![SOFTWARE_PRESENTATION](https://github.com/juancarlosmiranda/azure_kinect_notes/blob/main/img/azure_kinect_notes_presentation.png?raw=true)
+![SOFTWARE_PRESENTATION](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/azure_kinect_notes/img/azure_kinect_notes_presentation.png?raw=true)
 
 
 # README - Azure Kinect camera setup
@@ -103,7 +103,7 @@ Testing with tool **[k4aviewer](https://docs.microsoft.com/en/azure/kinect-dk/az
 ```
 sudo k4aviewer
 ```
-![k4aviewer](https://github.com/juancarlosmiranda/azure_kinect_notes/blob/main/img/k4aviewer_tool.png?raw=true)
+![k4aviewer](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/azure_kinect_notes/img/k4aviewer_tool.png?raw=true)
 
 You can check installed software with:
 ```
