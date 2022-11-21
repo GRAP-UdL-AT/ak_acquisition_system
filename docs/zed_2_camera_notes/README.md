@@ -1,4 +1,4 @@
-![SOFTWARE_PRESENTATION](https://github.com/juancarlosmiranda/zed_2_camera_notes/blob/main/img/zed_2_presentation.png?raw=true)
+![SOFTWARE_PRESENTATION](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/docs/zed_2_camera_notes/img/zed_2_presentation.png?raw=true)
 
 # README - Stereolabs ZED 2 camera
 
@@ -65,4 +65,4 @@ Please contact author to report bugs juancarlos.miranda@udl.cat
 ## Citation
 
 If you find this code useful, please consider citing:
-[AK_ACQS - ak Acquisition System](https://github.com/GRAP-UdL-AT/ak_acquisition_system).
+[AK_ACQS - AK Acquisition System](https://github.com/GRAP-UdL-AT/ak_acquisition_system).
