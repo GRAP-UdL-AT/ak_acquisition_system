@@ -94,7 +94,9 @@ Documents and explanations accompanying AK_ACQS.
 | Folder                    | Description                                                                                                |
 |---------------------------|------------------------------------------------------------------------------------------------------------|
 | [REST API test/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/docs/)| Explanations about testing REST API.     |
-| [Notes for developers/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/docs/NOTES_FOR_DEVELOPERS.md)| Explanations about development environment     |
+| [Notes for developers](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/docs/NOTES_FOR_DEVELOPERS.md)| Explanations about development environment.     |
+| [Azure Kinect camera setup](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/docs/azure_kinect_notes/)| Instructions to set up the Azure Kinect camera.     |
+| [Stereolabs ZED 2 camera setup](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/docs/zed_2_camera_notes/)| Instructions to set up the ZED camera.     |
 
 ### 4.3 Package distribution format
 
