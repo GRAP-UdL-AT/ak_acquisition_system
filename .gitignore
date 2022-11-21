@@ -30,3 +30,9 @@ remote_client_zed/.idea/inspectionProfiles/profiles_settings.xml
 remote_client_zed/.idea/misc.xml
 remote_client_zed/.idea/modules.xml
 *.iml
+.idea/vcs.xml
+.idea/dataSources.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/misc.xml
+.idea/modules.xml
