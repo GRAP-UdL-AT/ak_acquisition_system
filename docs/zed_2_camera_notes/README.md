@@ -1,4 +1,4 @@
-![SOFTWARE_PRESENTATION](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/docs/zed_2_camera_notes/img/zed_2_presentation.png?raw=true)
+![SOFTWARE_PRESENTATION](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/docs/zed_2_camera_notes/zed_2_presentation.png?raw=true)
 
 # README - Stereolabs ZED 2 camera
 
