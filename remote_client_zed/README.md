@@ -155,7 +155,7 @@ $ curl -d "username=USER_ACCOUNT_HERE&password=USER_PASSWORD_HERE" http://HOST_S
 ### 3.4 Check ZED 2 camera settings ./conf/zed_settings.conf
 
 You need to make sure that the ZED 2 camera is connected and recognized by the operating system. Follow the instructions
-in this [zed_2_camera_notes](https://github.com/juancarlosmiranda/zed_2_camera_notes) section if you haven't installed
+in this [zed_2_camera_notes](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/docs/zed_2_camera_notes) section if you haven't installed
 the camera before. In the file **./conf/zed_settings.conf** there are camera-related settings stored. Settings
 parameters are explained in [**[API Documentation]**](https://www.stereolabs.com/docs/api/).
 

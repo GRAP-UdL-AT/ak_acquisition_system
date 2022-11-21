@@ -63,7 +63,7 @@ To start the client, you need to follow the steps below:
 ### 3.1. Install
 
 * Install Azure Kinect camera drivers by following the instructions
-  at [azure_kinect_notes](https://github.com/juancarlosmiranda/azure_kinect_notes), depending on whether your operating
+  at [azure_kinect_notes](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/docs/azure_kinect_notes), depending on whether your operating
   system is Linux or Windows.
 
 * [Linux] Create and activate the Python environment as follows:
@@ -73,7 +73,7 @@ To start the client, you need to follow the steps below:
 ```
 
 For more information on the folder hierarchy used in development environments, go
-to [[Notes for developers]](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/NOTES_FOR_DEVELOPERS.md)
+to [[Notes for developers]](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/docs/NOTES_FOR_DEVELOPERS.md)
 
 * [Windows] Follow these steps from command line CMD.
 
@@ -136,7 +136,7 @@ $ curl -d "username=USER_ACCOUNT_HERE&password=USER_PASSWORD_HERE" http://HOST_S
 ### 3.4 Check Azure Kinect camera settings ./conf/kinect_azure_settings.conf
 
 You need to make sure that the Azure Kinect camera is connected and recognized by the operating system. Follow the
-instructions in this ["azure_kinect_notes"](https://github.com/juancarlosmiranda/azure_kinect_notes) section if you
+instructions in this ["azure_kinect_notes"](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/docs/azure_kinect_notes) section if you
 haven't installed the camera before. In the file **./conf/kinect_azure_settings.conf** there are camera-related settings
 stored. Settings parameters are explained
 in [**[Azure Kinect Sensor SDK]**](https://microsoft.github.io/Azure-Kinect-Sensor-SDK/master/index.html)

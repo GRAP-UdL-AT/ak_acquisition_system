@@ -94,7 +94,7 @@ Documents and explanations accompanying AK_ACQS.
 | Folder                    | Description                                                                                                |
 |---------------------------|------------------------------------------------------------------------------------------------------------|
 | [REST API test/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/server_rest_api/docs/)| Explanations about testing REST API.     |
-| [Notes for developers/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/blob/main/docs/NOTES_FOR_DEVELOPERS.md)| Explanations about development environment     |
+| [Notes for developers/](https://github.com/GRAP-UdL-AT/ak_acquisition_system/tree/main/docs/NOTES_FOR_DEVELOPERS.md)| Explanations about development environment     |
 
 ### 4.3 Package distribution format
 
