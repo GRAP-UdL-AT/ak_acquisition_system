@@ -48,4 +48,4 @@ Please contact authors to report bugs juancarlos.miranda@udl.cat
 
 ## Citation
 If you find this code useful, please consider citing:
-[Juan Carlos Miranda](https://github.com/juancarlosmiranda).
+[AK_ACQS - AK Acquisition System](https://github.com/GRAP-UdL-AT/ak_acquisition_system).
