@@ -150,4 +150,4 @@ Please contact author to report bugs juancarlos.miranda@udl.cat
 
 ## Citation
 If you find this code useful, please consider citing:
-[AK_ACQS - ak Acquisition System](https://github.com/GRAP-UdL-AT/ak_acquisition_system).
+[AK_ACQS - AK Acquisition System](https://github.com/GRAP-UdL-AT/ak_acquisition_system).
